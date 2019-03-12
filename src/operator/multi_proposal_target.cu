@@ -28,7 +28,7 @@
 #include "./multi_proposal_target-inl.h"
 #include <set>
 #include <math.h>
-#include <unistd.h>
+#include "unistd.h"
 #include <dmlc/logging.h>
 #include <dmlc/parameter.h>
 #include <mxnet/operator.h>

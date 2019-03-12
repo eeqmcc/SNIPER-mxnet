@@ -28,7 +28,7 @@
 #include "./multi_proposal_target_mask-inl.h"
 #include <set>
 #include <math.h>
-#include <unistd.h>
+#include "unistd.h"
 #include <dmlc/logging.h>
 #include <dmlc/parameter.h>
 #include <mxnet/operator.h>
@@ -545,7 +545,7 @@ class MultiProposalTargetMaskGPUOp : public Operator{
 
     int mask_ct = 0;
     for (int i = 0; i < num_images*300; i++) {
-      if (labels[i] > 0 and mask_ct < num_images * param_.max_masks) {
+      if (labels[i] > 0 && mask_ct < num_images * param_.max_masks) {
         out_pos_boxes[5*mask_ct] = crois[5*i];
         out_pos_boxes[5*mask_ct+1] = crois[5*i+1];
         out_pos_boxes[5*mask_ct+2] = crois[5*i+2];

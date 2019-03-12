@@ -30,7 +30,7 @@
 #include "../coco_api/common/maskApi.h"
 #include <set>
 #include <math.h>
-#include <unistd.h>
+#include "unistd.h"
 #include <time.h>
 
 namespace mxnet {
