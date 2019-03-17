@@ -157,7 +157,7 @@
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <PreprocessorDefinitions>NDEBUG;WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;MXNET_ENABLE_CUDA_RTC=1;MXNET_USE_CUDA=1;CMAKE_INTDIR="Release";mxnet_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;MXNET_ENABLE_CUDA_RTC=1;MXNET_USE_CUDA=1;CMAKE_INTDIR="Release";mxnet_EXPORTS;MSHADOW_USE_F16C=0;USE_OPENMP=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
@@ -187,7 +187,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\lib\intel64\mkl_rt.lib;iomp5.lib;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\lib\intel64\mkl_rt.lib;C:\opencv-3.4.4\build\x64\vc14\lib\opencv_world344.lib;C:\opencv-3.4.4\build\x64\vc14\lib\opencv_world344.lib;C:\opencv-3.4.4\build\x64\vc14\lib\opencv_world344.lib;C:\opencv-3.4.4\build\x64\vc14\lib\opencv_world344.lib;cublas.lib;cufft.lib;cusolver.lib;curand.lib;nvrtc.lib;cuda.lib;3rdparty\dmlc-core\Release\dmlc.lib;iomp5.lib;cublas.lib;cufft.lib;cusolver.lib;curand.lib;nvrtc.lib;cuda.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\lib\intel64\mkl_rt.lib;C:\opencv-3.4.4\build\x64\vc14\lib\opencv_world344.lib;cublas.lib;cufft.lib;cusolver.lib;curand.lib;nvrtc.lib;cuda.lib;3rdparty\dmlc-core\Release\dmlc.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v9.0/lib64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v9.0/lib64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
