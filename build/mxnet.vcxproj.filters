@@ -1,0 +1,2074 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\c_api\c_api.cc">
+      <Filter>Source\src\c_api</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\c_api\c_api_error.cc">
+      <Filter>Source\src\c_api</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\c_api\c_api_executor.cc">
+      <Filter>Source\src\c_api</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\c_api\c_api_function.cc">
+      <Filter>Source\src\c_api</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\c_api\c_api_ndarray.cc">
+      <Filter>Source\src\c_api</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\c_api\c_api_profile.cc">
+      <Filter>Source\src\c_api</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\c_api\c_api_symbolic.cc">
+      <Filter>Source\src\c_api</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\c_api\c_predict_api.cc">
+      <Filter>Source\src\c_api</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\coco_api\common\maskApi.cc">
+      <Filter>Source\src\coco_api\common</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\common\rtc.cc">
+      <Filter>Source\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\common\utils.cc">
+      <Filter>Source\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\engine\engine.cc">
+      <Filter>Source\src\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\engine\naive_engine.cc">
+      <Filter>Source\src\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\engine\openmp.cc">
+      <Filter>Source\src\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\engine\threaded_engine.cc">
+      <Filter>Source\src\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\engine\threaded_engine_perdevice.cc">
+      <Filter>Source\src\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\engine\threaded_engine_pooled.cc">
+      <Filter>Source\src\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\executor\attach_op_execs_pass.cc">
+      <Filter>Source\src\executor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\executor\attach_op_resource_pass.cc">
+      <Filter>Source\src\executor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\executor\graph_executor.cc">
+      <Filter>Source\src\executor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\executor\infer_graph_attr_pass.cc">
+      <Filter>Source\src\executor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\executor\inplace_addto_detect_pass.cc">
+      <Filter>Source\src\executor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\imperative\cached_op.cc">
+      <Filter>Source\src\imperative</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\imperative\imperative.cc">
+      <Filter>Source\src\imperative</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\initialize.cc">
+      <Filter>Source\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\image_aug_default.cc">
+      <Filter>Source\src\io</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\image_det_aug_default.cc">
+      <Filter>Source\src\io</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\image_io.cc">
+      <Filter>Source\src\io</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\io.cc">
+      <Filter>Source\src\io</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\iter_csv.cc">
+      <Filter>Source\src\io</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\iter_image_det_recordio.cc">
+      <Filter>Source\src\io</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\iter_image_recordio.cc">
+      <Filter>Source\src\io</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\iter_image_recordio_2.cc">
+      <Filter>Source\src\io</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\iter_libsvm.cc">
+      <Filter>Source\src\io</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\iter_mnist.cc">
+      <Filter>Source\src\io</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\kvstore\gradient_compression.cc">
+      <Filter>Source\src\kvstore</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\kvstore\kvstore.cc">
+      <Filter>Source\src\kvstore</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\kvstore\kvstore_utils.cc">
+      <Filter>Source\src\kvstore</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\ndarray\ndarray.cc">
+      <Filter>Source\src\ndarray</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\ndarray\ndarray_function.cc">
+      <Filter>Source\src\ndarray</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\nnvm\legacy_json_util.cc">
+      <Filter>Source\src\nnvm</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\nnvm\legacy_op_util.cc">
+      <Filter>Source\src\nnvm</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\nnvm\tvm_bridge.cc">
+      <Filter>Source\src\nnvm</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\batch_norm_v1.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\bilinear_sampler.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\adaptive_avg_pooling.cc">
+      <Filter>Source\src\operator\contrib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\bilinear_resize.cc">
+      <Filter>Source\src\operator\contrib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\bounding_box.cc">
+      <Filter>Source\src\operator\contrib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\count_sketch.cc">
+      <Filter>Source\src\operator\contrib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_loss.cc">
+      <Filter>Source\src\operator\contrib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\deformable_convolution.cc">
+      <Filter>Source\src\operator\contrib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\deformable_psroi_pooling.cc">
+      <Filter>Source\src\operator\contrib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\fft.cc">
+      <Filter>Source\src\operator\contrib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ifft.cc">
+      <Filter>Source\src\operator\contrib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\krprod.cc">
+      <Filter>Source\src\operator\contrib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\multibox_detection.cc">
+      <Filter>Source\src\operator\contrib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\multibox_prior.cc">
+      <Filter>Source\src\operator\contrib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\multibox_target.cc">
+      <Filter>Source\src\operator\contrib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\psroi_pooling.cc">
+      <Filter>Source\src\operator\contrib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\quadratic_op.cc">
+      <Filter>Source\src\operator\contrib</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\convolution_v1.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\correlation.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\crop.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\cross_device_copy.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\custom\custom.cc">
+      <Filter>Source\src\operator\custom</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\custom\native_op.cc">
+      <Filter>Source\src\operator\custom</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\custom\ndarray_op.cc">
+      <Filter>Source\src\operator\custom</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\grid_generator.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\identity_attach_KL_sparse_reg.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\image\image_random.cc">
+      <Filter>Source\src\operator\image</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\instance_norm.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\l2_normalization.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\leaky_relu.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\loss_binary_op.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\make_loss.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mask_rcnn_target.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\multi_proposal.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\multi_proposal_target.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\multi_proposal_target_mask.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\activation.cc">
+      <Filter>Source\src\operator\nn</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\batch_norm.cc">
+      <Filter>Source\src\operator\nn</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\concat.cc">
+      <Filter>Source\src\operator\nn</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\convolution.cc">
+      <Filter>Source\src\operator\nn</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\cudnn\cudnn_algoreg.cc">
+      <Filter>Source\src\operator\nn\cudnn</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\cudnn\cudnn_batch_norm.cc">
+      <Filter>Source\src\operator\nn\cudnn</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\deconvolution.cc">
+      <Filter>Source\src\operator\nn</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\dropout.cc">
+      <Filter>Source\src\operator\nn</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\fully_connected.cc">
+      <Filter>Source\src\operator\nn</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\layer_norm.cc">
+      <Filter>Source\src\operator\nn</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\lrn.cc">
+      <Filter>Source\src\operator\nn</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_act.cc">
+      <Filter>Source\src\operator\nn\mkldnn</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_base.cc">
+      <Filter>Source\src\operator\nn\mkldnn</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_concat.cc">
+      <Filter>Source\src\operator\nn\mkldnn</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_convolution.cc">
+      <Filter>Source\src\operator\nn\mkldnn</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_copy.cc">
+      <Filter>Source\src\operator\nn\mkldnn</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_deconvolution.cc">
+      <Filter>Source\src\operator\nn\mkldnn</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_fully_connected.cc">
+      <Filter>Source\src\operator\nn\mkldnn</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_pooling.cc">
+      <Filter>Source\src\operator\nn\mkldnn</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_softmax.cc">
+      <Filter>Source\src\operator\nn\mkldnn</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_sum.cc">
+      <Filter>Source\src\operator\nn\mkldnn</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\pooling.cc">
+      <Filter>Source\src\operator\nn</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\softmax.cc">
+      <Filter>Source\src\operator\nn</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\softmax_activation.cc">
+      <Filter>Source\src\operator\nn</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\upsampling.cc">
+      <Filter>Source\src\operator\nn</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nnpack\nnpack_util.cc">
+      <Filter>Source\src\operator\nnpack</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\operator.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\operator_tune.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\operator_util.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\optimizer_op.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\pad.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\pooling_v1.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\quantization\dequantize.cc">
+      <Filter>Source\src\operator\quantization</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\quantization\quantize.cc">
+      <Filter>Source\src\operator\quantization</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\quantization\quantize_graph_pass.cc">
+      <Filter>Source\src\operator\quantization</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\quantization\quantized_conv.cc">
+      <Filter>Source\src\operator\quantization</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\quantization\quantized_flatten.cc">
+      <Filter>Source\src\operator\quantization</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\quantization\quantized_fully_connected.cc">
+      <Filter>Source\src\operator\quantization</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\quantization\quantized_pooling.cc">
+      <Filter>Source\src\operator\quantization</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\quantization\requantize.cc">
+      <Filter>Source\src\operator\quantization</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\random\multisample_op.cc">
+      <Filter>Source\src\operator\random</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\random\sample_multinomial_op.cc">
+      <Filter>Source\src\operator\random</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\random\sample_op.cc">
+      <Filter>Source\src\operator\random</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\random\shuffle_op.cc">
+      <Filter>Source\src\operator\random</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\regression_output.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\rnn.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\roi_pooling.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\sequence_last.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\sequence_mask.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\sequence_reverse.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\slice_channel.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\softmax_output.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\spatial_transformer.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\svm_output.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\swapaxis.cc">
+      <Filter>Source\src\operator</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\broadcast_reduce_op_index.cc">
+      <Filter>Source\src\operator\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\broadcast_reduce_op_value.cc">
+      <Filter>Source\src\operator\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\cast_storage.cc">
+      <Filter>Source\src\operator\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\control_flow_op.cc">
+      <Filter>Source\src\operator\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\dot.cc">
+      <Filter>Source\src\operator\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_broadcast_op_basic.cc">
+      <Filter>Source\src\operator\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_broadcast_op_extended.cc">
+      <Filter>Source\src\operator\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_broadcast_op_logic.cc">
+      <Filter>Source\src\operator\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_op.cc">
+      <Filter>Source\src\operator\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_op_basic.cc">
+      <Filter>Source\src\operator\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_op_extended.cc">
+      <Filter>Source\src\operator\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_op_logic.cc">
+      <Filter>Source\src\operator\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_scalar_op_basic.cc">
+      <Filter>Source\src\operator\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_scalar_op_extended.cc">
+      <Filter>Source\src\operator\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_scalar_op_logic.cc">
+      <Filter>Source\src\operator\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_scatter_op.cc">
+      <Filter>Source\src\operator\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_sum.cc">
+      <Filter>Source\src\operator\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_unary_op_basic.cc">
+      <Filter>Source\src\operator\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_unary_op_trig.cc">
+      <Filter>Source\src\operator\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\indexing_op.cc">
+      <Filter>Source\src\operator\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\init_op.cc">
+      <Filter>Source\src\operator\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\la_op.cc">
+      <Filter>Source\src\operator\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\matrix_op.cc">
+      <Filter>Source\src\operator\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\ordering_op.cc">
+      <Filter>Source\src\operator\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\sparse_retain.cc">
+      <Filter>Source\src\operator\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\square_sum.cc">
+      <Filter>Source\src\operator\tensor</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\profiler\aggregate_stats.cc">
+      <Filter>Source\src\profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\profiler\profiler.cc">
+      <Filter>Source\src\profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\profiler\vtune.cc">
+      <Filter>Source\src\profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\resource.cc">
+      <Filter>Source\src</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\storage\storage.cc">
+      <Filter>Source\src\storage</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\c_api\c_api_error.cc">
+      <Filter>Source\3rdparty\nnvm\src\c_api</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\c_api\c_api_graph.cc">
+      <Filter>Source\3rdparty\nnvm\src\c_api</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\c_api\c_api_symbolic.cc">
+      <Filter>Source\3rdparty\nnvm\src\c_api</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\core\graph.cc">
+      <Filter>Source\3rdparty\nnvm\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\core\node.cc">
+      <Filter>Source\3rdparty\nnvm\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\core\op.cc">
+      <Filter>Source\3rdparty\nnvm\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\core\pass.cc">
+      <Filter>Source\3rdparty\nnvm\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\core\symbolic.cc">
+      <Filter>Source\3rdparty\nnvm\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\pass\gradient.cc">
+      <Filter>Source\3rdparty\nnvm\src\pass</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\pass\infer_shape_type.cc">
+      <Filter>Source\3rdparty\nnvm\src\pass</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\pass\order_mutation.cc">
+      <Filter>Source\3rdparty\nnvm\src\pass</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\pass\place_device.cc">
+      <Filter>Source\3rdparty\nnvm\src\pass</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\pass\plan_memory.cc">
+      <Filter>Source\3rdparty\nnvm\src\pass</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\pass\print_graph_ir.cc">
+      <Filter>Source\3rdparty\nnvm\src\pass</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\pass\saveload_json.cc">
+      <Filter>Source\3rdparty\nnvm\src\pass</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\c_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\c_predict_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\executor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\graph_attr_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\imperative.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\io.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\kvstore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\ndarray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\op_attr_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\operator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\operator_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\rtc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\storage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\tensor_blob.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\c_api\c_api_common.h">
+      <Filter>Include\src\c_api</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\coco_api\common\gason.h">
+      <Filter>Include\src\coco_api\common</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\coco_api\common\maskApi.h">
+      <Filter>Include\src\coco_api\common</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\common\cuda_utils.h">
+      <Filter>Include\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\common\exec_utils.h">
+      <Filter>Include\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\common\lazy_alloc_array.h">
+      <Filter>Include\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\common\object_pool.h">
+      <Filter>Include\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\common\random_generator.h">
+      <Filter>Include\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\common\static_array.h">
+      <Filter>Include\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\common\utils.h">
+      <Filter>Include\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\engine\engine_impl.h">
+      <Filter>Include\src\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\engine\openmp.h">
+      <Filter>Include\src\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\engine\stream_manager.h">
+      <Filter>Include\src\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\engine\thread_pool.h">
+      <Filter>Include\src\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\engine\threaded_engine.h">
+      <Filter>Include\src\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\executor\exec_pass.h">
+      <Filter>Include\src\executor</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\executor\graph_executor.h">
+      <Filter>Include\src\executor</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\imperative\imperative_utils.h">
+      <Filter>Include\src\imperative</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\image_augmenter.h">
+      <Filter>Include\src\io</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\image_iter_common.h">
+      <Filter>Include\src\io</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\image_recordio.h">
+      <Filter>Include\src\io</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\inst_vector.h">
+      <Filter>Include\src\io</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\iter_batchloader.h">
+      <Filter>Include\src\io</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\iter_normalize.h">
+      <Filter>Include\src\io</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\iter_prefetcher.h">
+      <Filter>Include\src\io</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\iter_sparse.h">
+      <Filter>Include\src\io</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\iter_sparse_batchloader.h">
+      <Filter>Include\src\io</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\iter_sparse_prefetcher.h">
+      <Filter>Include\src\io</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\kvstore\comm.h">
+      <Filter>Include\src\kvstore</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\kvstore\gradient_compression-inl.h">
+      <Filter>Include\src\kvstore</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\kvstore\gradient_compression.h">
+      <Filter>Include\src\kvstore</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\kvstore\kvstore_dist.h">
+      <Filter>Include\src\kvstore</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\kvstore\kvstore_dist_server.h">
+      <Filter>Include\src\kvstore</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\kvstore\kvstore_local.h">
+      <Filter>Include\src\kvstore</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\kvstore\kvstore_nccl.h">
+      <Filter>Include\src\kvstore</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\kvstore\kvstore_utils.h">
+      <Filter>Include\src\kvstore</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\ndarray\ndarray_function-inl.h">
+      <Filter>Include\src\ndarray</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\ndarray\ndarray_function.h">
+      <Filter>Include\src\ndarray</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\batch_norm_v1-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\bilinear_sampler-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\c_lapack_api.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\channel_op_common.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\adaptive_avg_pooling-inl.h">
+      <Filter>Include\src\operator\contrib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\bilinear_resize-inl.h">
+      <Filter>Include\src\operator\contrib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\bounding_box-inl.h">
+      <Filter>Include\src\operator\contrib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\count_sketch-inl.h">
+      <Filter>Include\src\operator\contrib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\mgpuenums.h">
+      <Filter>Include\src\operator\contrib\ctc_include\contrib\moderngpu\include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\util\static.h">
+      <Filter>Include\src\operator\contrib\ctc_include\contrib\moderngpu\include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\detail\cpu_ctc.h">
+      <Filter>Include\src\operator\contrib\ctc_include\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\detail\ctc_helper.h">
+      <Filter>Include\src\operator\contrib\ctc_include\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\detail\gpu_ctc.h">
+      <Filter>Include\src\operator\contrib\ctc_include\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\detail\gpu_ctc_kernels.h">
+      <Filter>Include\src\operator\contrib\ctc_include\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\detail\hostdevice.h">
+      <Filter>Include\src\operator\contrib\ctc_include\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_loss-inl.h">
+      <Filter>Include\src\operator\contrib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\deformable_convolution-inl.h">
+      <Filter>Include\src\operator\contrib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\deformable_psroi_pooling-inl.h">
+      <Filter>Include\src\operator\contrib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\fft-inl.h">
+      <Filter>Include\src\operator\contrib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ifft-inl.h">
+      <Filter>Include\src\operator\contrib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\krprod.h">
+      <Filter>Include\src\operator\contrib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\multibox_detection-inl.h">
+      <Filter>Include\src\operator\contrib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\multibox_prior-inl.h">
+      <Filter>Include\src\operator\contrib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\multibox_target-inl.h">
+      <Filter>Include\src\operator\contrib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\nn\deformable_im2col.h">
+      <Filter>Include\src\operator\contrib\nn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\psroi_pooling-inl.h">
+      <Filter>Include\src\operator\contrib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\quadratic_op-inl.h">
+      <Filter>Include\src\operator\contrib</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\convolution_v1-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\correlation-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\crop-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\cudnn_bilinear_sampler-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\cudnn_lrn-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\cudnn_rnn-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\cudnn_spatial_transformer-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\custom\custom-inl.h">
+      <Filter>Include\src\operator\custom</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\custom\native_op-inl.h">
+      <Filter>Include\src\operator\custom</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\custom\ndarray_op-inl.h">
+      <Filter>Include\src\operator\custom</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\elemwise_op_common.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\grid_generator-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\identity_attach_KL_sparse_reg-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\image\image_random-inl.h">
+      <Filter>Include\src\operator\image</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\instance_norm-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\l2_normalization-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\leaky_relu-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\linalg.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\linalg_impl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\loss_binary_op-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\make_loss-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mask_rcnn_target-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\math_functions-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mshadow_op.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\multi_proposal-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\multi_proposal_target-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\multi_proposal_target_mask-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mxnet_op.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\activation-inl.h">
+      <Filter>Include\src\operator\nn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\batch_norm-inl.h">
+      <Filter>Include\src\operator\nn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\concat-inl.h">
+      <Filter>Include\src\operator\nn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\convolution-inl.h">
+      <Filter>Include\src\operator\nn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\cudnn\cudnn_activation-inl.h">
+      <Filter>Include\src\operator\nn\cudnn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\cudnn\cudnn_algoreg-inl.h">
+      <Filter>Include\src\operator\nn\cudnn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\cudnn\cudnn_batch_norm-inl.h">
+      <Filter>Include\src\operator\nn\cudnn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\cudnn\cudnn_convolution-inl.h">
+      <Filter>Include\src\operator\nn\cudnn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\cudnn\cudnn_deconvolution-inl.h">
+      <Filter>Include\src\operator\nn\cudnn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\cudnn\cudnn_pooling-inl.h">
+      <Filter>Include\src\operator\nn\cudnn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\cudnn\cudnn_softmax_activation-inl.h">
+      <Filter>Include\src\operator\nn\cudnn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\deconvolution-inl.h">
+      <Filter>Include\src\operator\nn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\depthwise_convolution-inl.h">
+      <Filter>Include\src\operator\nn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\dropout-inl.h">
+      <Filter>Include\src\operator\nn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\fully_connected-inl.h">
+      <Filter>Include\src\operator\nn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\im2col.h">
+      <Filter>Include\src\operator\nn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\layer_norm-inl.h">
+      <Filter>Include\src\operator\nn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\lrn-inl.h">
+      <Filter>Include\src\operator\nn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_base-inl.h">
+      <Filter>Include\src\operator\nn\mkldnn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_batch_norm-inl.h">
+      <Filter>Include\src\operator\nn\mkldnn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_lrn-inl.h">
+      <Filter>Include\src\operator\nn\mkldnn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_ops-inl.h">
+      <Filter>Include\src\operator\nn\mkldnn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_pooling-inl.h">
+      <Filter>Include\src\operator\nn\mkldnn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\pool.h">
+      <Filter>Include\src\operator\nn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\pooling-inl.h">
+      <Filter>Include\src\operator\nn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\sequence_mask-inl.h">
+      <Filter>Include\src\operator\nn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\softmax-inl.h">
+      <Filter>Include\src\operator\nn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\softmax_activation-inl.h">
+      <Filter>Include\src\operator\nn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\upsampling-inl.h">
+      <Filter>Include\src\operator\nn</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nnpack\nnpack_convolution-inl.h">
+      <Filter>Include\src\operator\nnpack</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nnpack\nnpack_fully_connected-inl.h">
+      <Filter>Include\src\operator\nnpack</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nnpack\nnpack_pooling-inl.h">
+      <Filter>Include\src\operator\nnpack</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nnpack\nnpack_util.h">
+      <Filter>Include\src\operator\nnpack</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\operator_common.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\operator_tune-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\operator_tune.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\optimizer_op-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\pad-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\pooling_v1-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\quantization\dequantize-inl.h">
+      <Filter>Include\src\operator\quantization</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\quantization\quantization_utils.h">
+      <Filter>Include\src\operator\quantization</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\quantization\quantize-inl.h">
+      <Filter>Include\src\operator\quantization</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\quantization\quantized_flatten-inl.h">
+      <Filter>Include\src\operator\quantization</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\quantization\requantize-inl.h">
+      <Filter>Include\src\operator\quantization</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\random\multisample_op.h">
+      <Filter>Include\src\operator\random</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\random\sample_multinomial_op.h">
+      <Filter>Include\src\operator\random</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\random\sample_op.h">
+      <Filter>Include\src\operator\random</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\random\sampler.h">
+      <Filter>Include\src\operator\random</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\regression_output-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\rnn-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\roi_pooling-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\sequence_last-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\sequence_mask-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\sequence_op_common.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\sequence_reverse-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\slice_channel-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\softmax_output-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\spatial_transformer-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\special_functions-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\svm_output-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\swapaxis-inl.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\broadcast_reduce-inl.h">
+      <Filter>Include\src\operator\tensor</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\broadcast_reduce_op.h">
+      <Filter>Include\src\operator\tensor</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\cast_storage-inl.h">
+      <Filter>Include\src\operator\tensor</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\control_flow_op.h">
+      <Filter>Include\src\operator\tensor</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\dot-inl.h">
+      <Filter>Include\src\operator\tensor</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_broadcast_op.h">
+      <Filter>Include\src\operator\tensor</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_op-inl.h">
+      <Filter>Include\src\operator\tensor</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_op.h">
+      <Filter>Include\src\operator\tensor</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_scalar_op.h">
+      <Filter>Include\src\operator\tensor</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_scatter_op.h">
+      <Filter>Include\src\operator\tensor</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_sum.h">
+      <Filter>Include\src\operator\tensor</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_unary_op.h">
+      <Filter>Include\src\operator\tensor</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\indexing_op.h">
+      <Filter>Include\src\operator\tensor</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\init_op.h">
+      <Filter>Include\src\operator\tensor</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\la_op.h">
+      <Filter>Include\src\operator\tensor</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\la_op_inline.h">
+      <Filter>Include\src\operator\tensor</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\matrix_op-inl.h">
+      <Filter>Include\src\operator\tensor</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\ordering_op-inl.h">
+      <Filter>Include\src\operator\tensor</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\sort_op.h">
+      <Filter>Include\src\operator\tensor</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\sparse_retain-inl.h">
+      <Filter>Include\src\operator\tensor</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\square_sum-inl.h">
+      <Filter>Include\src\operator\tensor</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\util\tensor_util-inl.h">
+      <Filter>Include\src\operator\tensor\util</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\unistd.h">
+      <Filter>Include\src\operator</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\optimizer\sgd-inl.h">
+      <Filter>Include\src\optimizer</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\profiler\aggregate_stats.h">
+      <Filter>Include\src\profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\profiler\profiler.h">
+      <Filter>Include\src\profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\profiler\storage_profiler.h">
+      <Filter>Include\src\profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\profiler\vtune.h">
+      <Filter>Include\src\profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\storage\cpu_device_storage.h">
+      <Filter>Include\src\storage</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\storage\cpu_shared_storage_manager.h">
+      <Filter>Include\src\storage</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\storage\gpu_device_storage.h">
+      <Filter>Include\src\storage</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\storage\naive_storage_manager.h">
+      <Filter>Include\src\storage</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\storage\pinned_memory_storage.h">
+      <Filter>Include\src\storage</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\storage\pooled_storage_manager.h">
+      <Filter>Include\src\storage</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\storage\storage_manager.h">
+      <Filter>Include\src\storage</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\base.h">
+      <Filter>Include\3rdparty\nnvm\include\nnvm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\c_api.h">
+      <Filter>Include\3rdparty\nnvm\include\nnvm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\compiler\contrib_op_param.h">
+      <Filter>Include\3rdparty\nnvm\include\nnvm\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\compiler\op_attr_types.h">
+      <Filter>Include\3rdparty\nnvm\include\nnvm\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\compiler\packed_func_ext.h">
+      <Filter>Include\3rdparty\nnvm\include\nnvm\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\compiler\util.h">
+      <Filter>Include\3rdparty\nnvm\include\nnvm\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\graph.h">
+      <Filter>Include\3rdparty\nnvm\include\nnvm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\graph_attr_types.h">
+      <Filter>Include\3rdparty\nnvm\include\nnvm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\node.h">
+      <Filter>Include\3rdparty\nnvm\include\nnvm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\op.h">
+      <Filter>Include\3rdparty\nnvm\include\nnvm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\op_attr_types.h">
+      <Filter>Include\3rdparty\nnvm\include\nnvm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\pass.h">
+      <Filter>Include\3rdparty\nnvm\include\nnvm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\pass_functions.h">
+      <Filter>Include\3rdparty\nnvm\include\nnvm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\symbolic.h">
+      <Filter>Include\3rdparty\nnvm\include\nnvm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\top\nn.h">
+      <Filter>Include\3rdparty\nnvm\include\nnvm\top</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\top\tensor.h">
+      <Filter>Include\3rdparty\nnvm\include\nnvm\top</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\tuple.h">
+      <Filter>Include\3rdparty\nnvm\include\nnvm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\c_api\c_api_common.h">
+      <Filter>Include\3rdparty\nnvm\src\c_api</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\pass\graph_algorithm.h">
+      <Filter>Include\3rdparty\nnvm\src\pass</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\base.h">
+      <Filter>Include\3rdparty\mshadow\mshadow</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\dot_engine-inl.h">
+      <Filter>Include\3rdparty\mshadow\mshadow</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\expr_engine-inl.h">
+      <Filter>Include\3rdparty\mshadow\mshadow</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\expr_scalar-inl.h">
+      <Filter>Include\3rdparty\mshadow\mshadow</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\expression.h">
+      <Filter>Include\3rdparty\mshadow\mshadow</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension.h">
+      <Filter>Include\3rdparty\mshadow\mshadow</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\broadcast.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\broadcast_with_axis.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\channel_pool.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\channel_unpool.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\choose.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\complex.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\concat.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\crop.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\fill.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\flip.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\implicit_gemm.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\mask.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\mirror.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\one_hot.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\pack_col2patch.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\pad.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\range.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\reduce_with_axis.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\reduceto1d.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\reshape.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\slice.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\slice_ex.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\spatial_pool.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\spatial_unpool.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\spatial_upsampling_nearest.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\swapaxis.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\take.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\take_grad.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\transpose.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\unpack_patch2col.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\half.h">
+      <Filter>Include\3rdparty\mshadow\mshadow</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\half2.h">
+      <Filter>Include\3rdparty\mshadow\mshadow</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\io.h">
+      <Filter>Include\3rdparty\mshadow\mshadow</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\logging.h">
+      <Filter>Include\3rdparty\mshadow\mshadow</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\packet-inl.h">
+      <Filter>Include\3rdparty\mshadow\mshadow</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\packet\plain-inl.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\packet</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\packet\sse-inl.h">
+      <Filter>Include\3rdparty\mshadow\mshadow\packet</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\random.h">
+      <Filter>Include\3rdparty\mshadow\mshadow</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\stream_gpu-inl.h">
+      <Filter>Include\3rdparty\mshadow\mshadow</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\tensor.h">
+      <Filter>Include\3rdparty\mshadow\mshadow</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\tensor_container.h">
+      <Filter>Include\3rdparty\mshadow\mshadow</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\tensor_cpu-inl.h">
+      <Filter>Include\3rdparty\mshadow\mshadow</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\tensor_gpu-inl.h">
+      <Filter>Include\3rdparty\mshadow\mshadow</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\src\common\random_generator.cu">
+      <Filter>CUDA\src\common</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\common\utils.cu">
+      <Filter>CUDA\src\common</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\kvstore\gradient_compression.cu">
+      <Filter>CUDA\src\kvstore</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\kvstore\kvstore_utils.cu">
+      <Filter>CUDA\src\kvstore</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\ndarray\ndarray_function.cu">
+      <Filter>CUDA\src\ndarray</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\batch_norm_v1.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\bilinear_sampler.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\contrib\adaptive_avg_pooling.cu">
+      <Filter>CUDA\src\operator\contrib</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\contrib\bilinear_resize.cu">
+      <Filter>CUDA\src\operator\contrib</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\contrib\bounding_box.cu">
+      <Filter>CUDA\src\operator\contrib</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\contrib\count_sketch.cu">
+      <Filter>CUDA\src\operator\contrib</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\contrib\ctc_loss.cu">
+      <Filter>CUDA\src\operator\contrib</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\contrib\deformable_convolution.cu">
+      <Filter>CUDA\src\operator\contrib</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\contrib\deformable_psroi_pooling.cu">
+      <Filter>CUDA\src\operator\contrib</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\contrib\fft.cu">
+      <Filter>CUDA\src\operator\contrib</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\contrib\ifft.cu">
+      <Filter>CUDA\src\operator\contrib</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\contrib\multibox_detection.cu">
+      <Filter>CUDA\src\operator\contrib</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\contrib\multibox_prior.cu">
+      <Filter>CUDA\src\operator\contrib</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\contrib\multibox_target.cu">
+      <Filter>CUDA\src\operator\contrib</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\contrib\psroi_pooling.cu">
+      <Filter>CUDA\src\operator\contrib</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\contrib\quadratic_op.cu">
+      <Filter>CUDA\src\operator\contrib</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\convolution_v1.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\correlation.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\crop.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\custom\native_op.cu">
+      <Filter>CUDA\src\operator\custom</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\grid_generator.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\identity_attach_KL_sparse_reg.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\instance_norm.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\l2_normalization.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\leaky_relu.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\loss_binary_op.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\make_loss.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\mask_rcnn_target.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\multi_proposal.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\multi_proposal_target.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\multi_proposal_target_mask.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\nn\activation.cu">
+      <Filter>CUDA\src\operator\nn</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\nn\batch_norm.cu">
+      <Filter>CUDA\src\operator\nn</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\nn\concat.cu">
+      <Filter>CUDA\src\operator\nn</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\nn\convolution.cu">
+      <Filter>CUDA\src\operator\nn</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\nn\cudnn\cudnn_batch_norm.cu">
+      <Filter>CUDA\src\operator\nn\cudnn</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\nn\deconvolution.cu">
+      <Filter>CUDA\src\operator\nn</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\nn\dropout.cu">
+      <Filter>CUDA\src\operator\nn</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\nn\fully_connected.cu">
+      <Filter>CUDA\src\operator\nn</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\nn\layer_norm.cu">
+      <Filter>CUDA\src\operator\nn</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\nn\lrn.cu">
+      <Filter>CUDA\src\operator\nn</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\nn\pooling.cu">
+      <Filter>CUDA\src\operator\nn</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\nn\softmax.cu">
+      <Filter>CUDA\src\operator\nn</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\nn\softmax_activation.cu">
+      <Filter>CUDA\src\operator\nn</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\nn\upsampling.cu">
+      <Filter>CUDA\src\operator\nn</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\optimizer_op.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\pad.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\pooling_v1.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\quantization\dequantize.cu">
+      <Filter>CUDA\src\operator\quantization</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\quantization\quantize.cu">
+      <Filter>CUDA\src\operator\quantization</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\quantization\quantized_conv.cu">
+      <Filter>CUDA\src\operator\quantization</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\quantization\quantized_flatten.cu">
+      <Filter>CUDA\src\operator\quantization</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\quantization\quantized_fully_connected.cu">
+      <Filter>CUDA\src\operator\quantization</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\quantization\quantized_pooling.cu">
+      <Filter>CUDA\src\operator\quantization</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\quantization\requantize.cu">
+      <Filter>CUDA\src\operator\quantization</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\random\multisample_op.cu">
+      <Filter>CUDA\src\operator\random</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\random\sample_multinomial_op.cu">
+      <Filter>CUDA\src\operator\random</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\random\sample_op.cu">
+      <Filter>CUDA\src\operator\random</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\random\shuffle_op.cu">
+      <Filter>CUDA\src\operator\random</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\regression_output.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\rnn.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\roi_pooling.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\sequence_last.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\sequence_mask.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\sequence_reverse.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\slice_channel.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\softmax_output.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\spatial_transformer.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\svm_output.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\swapaxis.cu">
+      <Filter>CUDA\src\operator</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\broadcast_reduce_op_index.cu">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\broadcast_reduce_op_value.cu">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\cast_storage.cu">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\control_flow_op.cu">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\dot.cu">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\elemwise_binary_broadcast_op_basic.cu">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\elemwise_binary_broadcast_op_extended.cu">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\elemwise_binary_broadcast_op_logic.cu">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\elemwise_binary_op_basic.cu">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\elemwise_binary_op_extended.cu">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\elemwise_binary_op_logic.cu">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\elemwise_binary_scalar_op_basic.cu">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\elemwise_binary_scalar_op_extended.cu">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\elemwise_binary_scalar_op_logic.cu">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\elemwise_scatter_op.cu">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\elemwise_sum.cu">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\elemwise_unary_op_basic.cu">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\elemwise_unary_op_trig.cu">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\indexing_op.cu">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\init_op.cu">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\la_op.cu">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\matrix_op.cu">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\ordering_op.cu">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\sparse_retain.cu">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\square_sum.cu">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\sun-mxnet\SNIPER-mxnet\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\ndarray\ndarray_function-inl.cuh">
+      <Filter>CUDA\src\ndarray</Filter>
+    </None>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\ctaloadbalance.cuh">
+      <Filter>CUDA\src\operator\contrib\ctc_include\contrib\moderngpu\include\device</Filter>
+    </None>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\ctamerge.cuh">
+      <Filter>CUDA\src\operator\contrib\ctc_include\contrib\moderngpu\include\device</Filter>
+    </None>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\ctascan.cuh">
+      <Filter>CUDA\src\operator\contrib\ctc_include\contrib\moderngpu\include\device</Filter>
+    </None>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\ctasearch.cuh">
+      <Filter>CUDA\src\operator\contrib\ctc_include\contrib\moderngpu\include\device</Filter>
+    </None>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\ctasegreduce.cuh">
+      <Filter>CUDA\src\operator\contrib\ctc_include\contrib\moderngpu\include\device</Filter>
+    </None>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\ctasegscan.cuh">
+      <Filter>CUDA\src\operator\contrib\ctc_include\contrib\moderngpu\include\device</Filter>
+    </None>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\ctasegsort.cuh">
+      <Filter>CUDA\src\operator\contrib\ctc_include\contrib\moderngpu\include\device</Filter>
+    </None>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\ctasortedsearch.cuh">
+      <Filter>CUDA\src\operator\contrib\ctc_include\contrib\moderngpu\include\device</Filter>
+    </None>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\devicetypes.cuh">
+      <Filter>CUDA\src\operator\contrib\ctc_include\contrib\moderngpu\include\device</Filter>
+    </None>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\deviceutil.cuh">
+      <Filter>CUDA\src\operator\contrib\ctc_include\contrib\moderngpu\include\device</Filter>
+    </None>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\intrinsics.cuh">
+      <Filter>CUDA\src\operator\contrib\ctc_include\contrib\moderngpu\include\device</Filter>
+    </None>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\loadstore.cuh">
+      <Filter>CUDA\src\operator\contrib\ctc_include\contrib\moderngpu\include\device</Filter>
+    </None>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\serialsets.cuh">
+      <Filter>CUDA\src\operator\contrib\ctc_include\contrib\moderngpu\include\device</Filter>
+    </None>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\sortnetwork.cuh">
+      <Filter>CUDA\src\operator\contrib\ctc_include\contrib\moderngpu\include\device</Filter>
+    </None>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\mgpudevice.cuh">
+      <Filter>CUDA\src\operator\contrib\ctc_include\contrib\moderngpu\include</Filter>
+    </None>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\nn\deformable_im2col.cuh">
+      <Filter>CUDA\src\operator\contrib\nn</Filter>
+    </None>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\depthwise_convolution_tf.cuh">
+      <Filter>CUDA\src\operator\nn</Filter>
+    </None>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\im2col.cuh">
+      <Filter>CUDA\src\operator\nn</Filter>
+    </None>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\pool.cuh">
+      <Filter>CUDA\src\operator\nn</Filter>
+    </None>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\broadcast_reduce-inl.cuh">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </None>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\cast_storage-inl.cuh">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </None>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\dot-inl.cuh">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </None>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\indexing_op-inl.cuh">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </None>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\sort_op-inl.cuh">
+      <Filter>CUDA\src\operator\tensor</Filter>
+    </None>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\util\tensor_util-inl.cuh">
+      <Filter>CUDA\src\operator\tensor\util</Filter>
+    </None>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\cuda\reduce.cuh">
+      <Filter>CUDA\3rdparty\mshadow\mshadow\cuda</Filter>
+    </None>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\cuda\tensor_gpu-inl.cuh">
+      <Filter>CUDA\3rdparty\mshadow\mshadow\cuda</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CUDA">
+      <UniqueIdentifier>{D52A1311-27AD-3A7B-9D26-ACB666E36585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA\3rdparty">
+      <UniqueIdentifier>{85372AE7-AA5B-3633-B6A3-D0F955684862}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA\3rdparty\mshadow">
+      <UniqueIdentifier>{AC205C50-4BFB-33F0-9944-3AFF6839CD67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA\3rdparty\mshadow\mshadow">
+      <UniqueIdentifier>{DA75414E-47C4-33CA-B33D-DC3F8245AACE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA\3rdparty\mshadow\mshadow\cuda">
+      <UniqueIdentifier>{D336F253-92DD-33FF-858B-EE695BD319CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA\src">
+      <UniqueIdentifier>{521FDEDF-09BC-3139-ADC4-1ECCB39AFA2C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA\src\common">
+      <UniqueIdentifier>{067B8AE3-E8F4-3923-81B9-692EECA96AF1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA\src\kvstore">
+      <UniqueIdentifier>{D63CF5F5-AEA9-378D-8A6D-CA70577D7285}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA\src\ndarray">
+      <UniqueIdentifier>{DAECE5A7-4F5C-3577-BC98-BEBABB047A27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA\src\operator">
+      <UniqueIdentifier>{93B2A6E9-D587-3857-9CBA-B378FF361D63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA\src\operator\contrib">
+      <UniqueIdentifier>{626656E2-77F9-3A86-A70E-D880780BC31F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA\src\operator\contrib\ctc_include">
+      <UniqueIdentifier>{09BB4EA2-107A-371D-8833-4AA3D4AEC93A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA\src\operator\contrib\ctc_include\contrib">
+      <UniqueIdentifier>{AD894A6A-A345-3474-B46E-0C09F78CE228}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA\src\operator\contrib\ctc_include\contrib\moderngpu">
+      <UniqueIdentifier>{FBFA9C88-89B4-3781-9A19-87E0D4A7C35F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA\src\operator\contrib\ctc_include\contrib\moderngpu\include">
+      <UniqueIdentifier>{32632D26-7393-3900-B3D1-2287D9CBC813}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA\src\operator\contrib\ctc_include\contrib\moderngpu\include\device">
+      <UniqueIdentifier>{4CBF136E-3FD2-3239-BB19-17BADDE59E37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA\src\operator\contrib\nn">
+      <UniqueIdentifier>{4A475AE4-300A-351C-B4E3-A92F8802ACD7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA\src\operator\custom">
+      <UniqueIdentifier>{5FBD7D50-E79D-3574-A829-DCA66C76DA45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA\src\operator\nn">
+      <UniqueIdentifier>{2AFCB1E7-A197-3057-A7D0-7FA7AEF1E1EB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA\src\operator\nn\cudnn">
+      <UniqueIdentifier>{142F75A8-70BE-3ACD-AAAD-54A0D0E8CED1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA\src\operator\quantization">
+      <UniqueIdentifier>{C36D7793-9724-3E15-8F45-66745577D78B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA\src\operator\random">
+      <UniqueIdentifier>{2064C13E-C5A1-3B13-89A5-24CAE13A08E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA\src\operator\tensor">
+      <UniqueIdentifier>{D650EDD5-8DCD-3E37-8663-6207D8C50C7D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA\src\operator\tensor\util">
+      <UniqueIdentifier>{45251E1F-8B89-3067-8BFB-E0FACB134F70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{71536FE5-3B6F-3147-929A-811EB2201F4D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{B58351C4-624F-30A4-95C2-5F4029BAEBCA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\3rdparty">
+      <UniqueIdentifier>{A8E8A9C4-9F7A-3EBE-8829-BA30124AB4A9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\3rdparty\mshadow">
+      <UniqueIdentifier>{4189B98A-9EB3-3ED0-B365-30FEDC981E8F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\3rdparty\mshadow\mshadow">
+      <UniqueIdentifier>{F57210D8-A023-3A94-AEA0-9F3AC6C24ECA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\3rdparty\mshadow\mshadow\extension">
+      <UniqueIdentifier>{E7CBB51C-7C22-39B8-8BB3-60126233026D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\3rdparty\mshadow\mshadow\packet">
+      <UniqueIdentifier>{A26804F6-09F1-3FD2-AF7A-78ACB3C62759}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\3rdparty\nnvm">
+      <UniqueIdentifier>{40333C29-D577-356D-A0F0-D1C2E1173029}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\3rdparty\nnvm\include">
+      <UniqueIdentifier>{2367BAA6-4FF3-3ADD-9BE9-42FB51A8E17B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\3rdparty\nnvm\include\nnvm">
+      <UniqueIdentifier>{45FBCF3E-7668-31F2-B29F-A01B7ED34560}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\3rdparty\nnvm\include\nnvm\compiler">
+      <UniqueIdentifier>{CC20F1D3-E280-3FD2-AF09-E718F629B9E9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\3rdparty\nnvm\include\nnvm\top">
+      <UniqueIdentifier>{DA785B8C-25BC-3B79-97CA-281301D1B62D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\3rdparty\nnvm\src">
+      <UniqueIdentifier>{03A52992-3F8B-3E36-AFA7-613E0A666BB4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\3rdparty\nnvm\src\c_api">
+      <UniqueIdentifier>{C8B86F10-AECE-363B-8155-0AA9F573EABF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\3rdparty\nnvm\src\pass">
+      <UniqueIdentifier>{0A94F06F-6DE7-320D-8F7C-646B67999A52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src">
+      <UniqueIdentifier>{208D0FC2-AE0A-3153-9789-AAAF7C63BB7C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\c_api">
+      <UniqueIdentifier>{4B981847-B7CE-347B-B971-4F9C3FCC07E9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\coco_api">
+      <UniqueIdentifier>{8D090F40-35C1-3DE6-953C-427B08A51FB4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\coco_api\common">
+      <UniqueIdentifier>{FF51CB12-3021-3A70-8E39-71CAC9F099AA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\common">
+      <UniqueIdentifier>{E6489FBE-2D45-32DA-BD56-7CBE72F9A4DB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\engine">
+      <UniqueIdentifier>{9BE2C8C8-3DD5-32F7-B629-32F429B2BDC2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\executor">
+      <UniqueIdentifier>{B4EE2833-1E07-3E34-A9AE-B59EC4E6CE52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\imperative">
+      <UniqueIdentifier>{1AE761D3-72EF-36F6-B639-538D1504AD75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\io">
+      <UniqueIdentifier>{8AFA7AE1-7C98-3C2F-B31D-15BE4AA3AF72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\kvstore">
+      <UniqueIdentifier>{53F76948-D998-3483-9605-F5D833772B41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\ndarray">
+      <UniqueIdentifier>{73F76ED0-1A73-3AEF-990B-03DBE6A41DCF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\operator">
+      <UniqueIdentifier>{00DA1B43-7E5F-3CEF-A2E7-4C360114CFB0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\operator\contrib">
+      <UniqueIdentifier>{6DDC566A-1424-30CE-BF7E-8F8FCE8EC2B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\operator\contrib\ctc_include">
+      <UniqueIdentifier>{58A37871-8884-3673-824F-A4E354AE6498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\operator\contrib\ctc_include\contrib">
+      <UniqueIdentifier>{E497CB29-7085-311F-864A-30F5ABDAFB15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\operator\contrib\ctc_include\contrib\moderngpu">
+      <UniqueIdentifier>{E6E71F94-8CCC-3EAD-9645-436077E95D7C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\operator\contrib\ctc_include\contrib\moderngpu\include">
+      <UniqueIdentifier>{CC247C69-D368-3CAC-B430-4CE14A48D193}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\operator\contrib\ctc_include\contrib\moderngpu\include\util">
+      <UniqueIdentifier>{07767517-EE95-3E0A-A745-9DECD0782AC7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\operator\contrib\ctc_include\detail">
+      <UniqueIdentifier>{1C892DD3-2AAA-3DE8-93B9-87F45943A6D9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\operator\contrib\nn">
+      <UniqueIdentifier>{F8DFDE21-076D-35E8-8A0D-126E3E616BC7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\operator\custom">
+      <UniqueIdentifier>{CBC602D2-870A-3037-B368-A3B88376840D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\operator\image">
+      <UniqueIdentifier>{104D93F0-A84A-32BD-ACEF-4E2005A631B8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\operator\nn">
+      <UniqueIdentifier>{A479CEEF-0D74-3BFC-A7A1-9C0ADA325D0D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\operator\nn\cudnn">
+      <UniqueIdentifier>{E61872A3-D7C8-3C0F-A5D0-A6D0BBD91760}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\operator\nn\mkldnn">
+      <UniqueIdentifier>{E2E1FB00-0B42-3E45-9B3C-5B37AEA4D294}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\operator\nnpack">
+      <UniqueIdentifier>{DA40CF7B-7072-3A8A-BADC-EFF7AB2427AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\operator\quantization">
+      <UniqueIdentifier>{61193AAC-F2AE-3AB2-9D1F-59684AD2D0DB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\operator\random">
+      <UniqueIdentifier>{F23FDCCE-70B8-3B95-B328-941811B5325D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\operator\tensor">
+      <UniqueIdentifier>{394CCAB3-C142-378E-A228-CDEBC444EDFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\operator\tensor\util">
+      <UniqueIdentifier>{D63DDD03-DE1B-32F2-B33D-6FF9F169292A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\optimizer">
+      <UniqueIdentifier>{C6566C85-FCC5-3548-80C2-E09DE0740FEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\profiler">
+      <UniqueIdentifier>{184A1F0E-8B31-300E-8727-8687B882CAFB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\src\storage">
+      <UniqueIdentifier>{2AC9A5A0-84FC-3FF7-9649-BEB89642D5BB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{F99E67CB-3464-3114-8D34-C3FE307B1FBB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\3rdparty">
+      <UniqueIdentifier>{EA745DE9-9A0E-316D-A350-D6169F7BB21A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\3rdparty\nnvm">
+      <UniqueIdentifier>{F37301F5-A9D4-35C1-9787-7BED901A87FC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\3rdparty\nnvm\src">
+      <UniqueIdentifier>{84C36F79-14E3-3DA1-A00F-E4A5E7861D3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\3rdparty\nnvm\src\c_api">
+      <UniqueIdentifier>{6C9C91E1-AC08-343C-8512-5C04231D07D7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\3rdparty\nnvm\src\core">
+      <UniqueIdentifier>{498B281B-6C48-38D3-9E8A-19BD4A27263A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\3rdparty\nnvm\src\pass">
+      <UniqueIdentifier>{06634D53-B066-32E2-8BD7-4E837154F9B3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\src">
+      <UniqueIdentifier>{EF9C7E5F-7BC6-3CE0-A311-586F0D92C52F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\src\c_api">
+      <UniqueIdentifier>{D53A985D-E2C2-3C53-95B6-EF3DFF26B3D6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\src\coco_api">
+      <UniqueIdentifier>{90682A84-2190-337C-9971-410D1F41C2CD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\src\coco_api\common">
+      <UniqueIdentifier>{775DFAF6-5186-30FB-844C-DCD6BC26C6CC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\src\common">
+      <UniqueIdentifier>{E44BF394-EF20-395B-943E-6B3020D321D8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\src\engine">
+      <UniqueIdentifier>{C8EDF9E1-1F31-321A-9616-81C4D0C51922}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\src\executor">
+      <UniqueIdentifier>{7DAEAF7E-BD51-3FBE-89A2-DAB52ACB9456}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\src\imperative">
+      <UniqueIdentifier>{7B99C221-D925-3274-B398-7DFC15B7BBCD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\src\io">
+      <UniqueIdentifier>{DA62854A-C9D7-35D2-986A-C54F97F19C6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\src\kvstore">
+      <UniqueIdentifier>{617D70F0-3B48-3033-82F5-D1EF30670EA2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\src\ndarray">
+      <UniqueIdentifier>{26216BF9-0F67-3F83-B32D-13FA2F60D828}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\src\nnvm">
+      <UniqueIdentifier>{5C5712A5-8D9E-3F20-81E2-5DF1232E008D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\src\operator">
+      <UniqueIdentifier>{CA3C3147-A84B-3100-8EC2-9EEDEBDF8B14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\src\operator\contrib">
+      <UniqueIdentifier>{EF3C06AC-48CF-33F2-8803-52BA1069E45B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\src\operator\custom">
+      <UniqueIdentifier>{FC71EC95-169E-3A76-A643-73011888B17A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\src\operator\image">
+      <UniqueIdentifier>{3F8FA33E-D0F7-378C-AE3F-46E62A8AE3A2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\src\operator\nn">
+      <UniqueIdentifier>{5368D035-A909-37AE-B9CC-01407357F1E4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\src\operator\nn\cudnn">
+      <UniqueIdentifier>{3B40978D-25CB-34CF-854A-3FACE3BC8735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\src\operator\nn\mkldnn">
+      <UniqueIdentifier>{B05C0051-14D4-35AF-B87B-D30DF42FAB45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\src\operator\nnpack">
+      <UniqueIdentifier>{2EE074E9-5E94-3AB7-814E-715F7AE40CB3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\src\operator\quantization">
+      <UniqueIdentifier>{D8F4AA6C-37BA-3C6F-8592-A947A1B7C0DF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\src\operator\random">
+      <UniqueIdentifier>{F5D1485B-78D0-39A9-B6C8-718C9D783E02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\src\operator\tensor">
+      <UniqueIdentifier>{4614E713-1095-388D-9620-C8C0736BEA83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\src\profiler">
+      <UniqueIdentifier>{B8102096-65BF-37BF-85BB-9998125B9DC5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\src\storage">
+      <UniqueIdentifier>{76371762-9E45-38CF-97A9-219DAC88AFEE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

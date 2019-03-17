@@ -1,0 +1,1394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0DC86B40-3FA3-39D5-9C38-4BE9651156F0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>mxnet</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 9.0.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\sun-mxnet\SNIPER-mxnet\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mxnet.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libmxnet</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\sun-mxnet\SNIPER-mxnet\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mxnet.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libmxnet</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\sun-mxnet\SNIPER-mxnet\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">mxnet.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libmxnet</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\sun-mxnet\SNIPER-mxnet\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">mxnet.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libmxnet</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj "-Xcompiler=-MTd -Gy"</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PreprocessorDefinitions>WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;MXNET_ENABLE_CUDA_RTC=1;MXNET_USE_CUDA=1;CMAKE_INTDIR="Debug";mxnet_EXPORTS;USE_OPENMP=0;MSHADOW_USE_F16C=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;MXNET_ENABLE_CUDA_RTC=1;MXNET_USE_CUDA=1;CMAKE_INTDIR=\"Debug\";mxnet_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(Include)</Include>
+      <Defines>WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;MXNET_ENABLE_CUDA_RTC=1;MXNET_USE_CUDA=1;CMAKE_INTDIR="Debug";mxnet_EXPORTS;%(Defines)</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -Xcompiler="/MP /bigobj -Zi -Ob0 -Gy"</AdditionalOptions>
+      <CodeGeneration>compute_52,sm_52</CodeGeneration>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>Od</Optimization>
+      <Runtime>MTd</Runtime>
+      <RuntimeChecks>RTC1</RuntimeChecks>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <UseHostInclude>false</UseHostInclude>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\lib\intel64\mkl_rt.lib;C:\opencv-3.4.4\build\x64\vc14\lib\opencv_world344d.lib;cublas.lib;cufft.lib;cusolver.lib;curand.lib;nvrtc.lib;cuda.lib;3rdparty\dmlc-core\Debug\dmlc.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v9.0/lib64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v9.0/lib64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/work/sun-mxnet/SNIPER-mxnet/build/Debug/libmxnet.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/work/sun-mxnet/SNIPER-mxnet/build/Debug/libmxnet.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-Wno-deprecated-gpu-targets</AdditionalOptions>
+      <PerformDeviceLink>true</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj "-Xcompiler=-MT -Gy"</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;MXNET_ENABLE_CUDA_RTC=1;MXNET_USE_CUDA=1;CMAKE_INTDIR="Release";mxnet_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;MXNET_ENABLE_CUDA_RTC=1;MXNET_USE_CUDA=1;CMAKE_INTDIR=\"Release\";mxnet_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(Include)</Include>
+      <Defines>NDEBUG;WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;MXNET_ENABLE_CUDA_RTC=1;MXNET_USE_CUDA=1;CMAKE_INTDIR="Release";mxnet_EXPORTS;%(Defines)</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -Xcompiler="/MP /bigobj -Ob2 -Gy"</AdditionalOptions>
+      <CodeGeneration>compute_52,sm_52</CodeGeneration>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>O2</Optimization>
+      <Runtime>MT</Runtime>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <UseHostInclude>false</UseHostInclude>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\lib\intel64\mkl_rt.lib;iomp5.lib;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\lib\intel64\mkl_rt.lib;C:\opencv-3.4.4\build\x64\vc14\lib\opencv_world344.lib;C:\opencv-3.4.4\build\x64\vc14\lib\opencv_world344.lib;C:\opencv-3.4.4\build\x64\vc14\lib\opencv_world344.lib;C:\opencv-3.4.4\build\x64\vc14\lib\opencv_world344.lib;cublas.lib;cufft.lib;cusolver.lib;curand.lib;nvrtc.lib;cuda.lib;3rdparty\dmlc-core\Release\dmlc.lib;iomp5.lib;cublas.lib;cufft.lib;cusolver.lib;curand.lib;nvrtc.lib;cuda.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v9.0/lib64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v9.0/lib64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/work/sun-mxnet/SNIPER-mxnet/build/Release/libmxnet.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/work/sun-mxnet/SNIPER-mxnet/build/Release/libmxnet.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-Wno-deprecated-gpu-targets</AdditionalOptions>
+      <PerformDeviceLink>true</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;MXNET_ENABLE_CUDA_RTC=1;MXNET_USE_CUDA=1;CMAKE_INTDIR="MinSizeRel";mxnet_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;MXNET_ENABLE_CUDA_RTC=1;MXNET_USE_CUDA=1;CMAKE_INTDIR=\"MinSizeRel\";mxnet_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(Include)</Include>
+      <Defines>NDEBUG;WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;MXNET_ENABLE_CUDA_RTC=1;MXNET_USE_CUDA=1;CMAKE_INTDIR="MinSizeRel";mxnet_EXPORTS;%(Defines)</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -Xcompiler="/MP /bigobj -Ob1"</AdditionalOptions>
+      <CodeGeneration>compute_52,sm_52</CodeGeneration>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>O1</Optimization>
+      <Runtime>MD</Runtime>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <UseHostInclude>false</UseHostInclude>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\lib\intel64\mkl_rt.lib;iomp5.lib;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\lib\intel64\mkl_rt.lib;C:\opencv-3.4.4\build\x64\vc14\lib\opencv_world344.lib;C:\opencv-3.4.4\build\x64\vc14\lib\opencv_world344.lib;C:\opencv-3.4.4\build\x64\vc14\lib\opencv_world344.lib;C:\opencv-3.4.4\build\x64\vc14\lib\opencv_world344.lib;cublas.lib;cufft.lib;cusolver.lib;curand.lib;nvrtc.lib;cuda.lib;3rdparty\dmlc-core\MinSizeRel\dmlc.lib;iomp5.lib;cublas.lib;cufft.lib;cusolver.lib;curand.lib;nvrtc.lib;cuda.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v9.0/lib64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v9.0/lib64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/work/sun-mxnet/SNIPER-mxnet/build/MinSizeRel/libmxnet.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/work/sun-mxnet/SNIPER-mxnet/build/MinSizeRel/libmxnet.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-Wno-deprecated-gpu-targets</AdditionalOptions>
+      <PerformDeviceLink>true</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;MXNET_ENABLE_CUDA_RTC=1;MXNET_USE_CUDA=1;CMAKE_INTDIR="RelWithDebInfo";mxnet_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;MXNET_ENABLE_CUDA_RTC=1;MXNET_USE_CUDA=1;CMAKE_INTDIR=\"RelWithDebInfo\";mxnet_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(Include)</Include>
+      <Defines>NDEBUG;WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;MXNET_ENABLE_CUDA_RTC=1;MXNET_USE_CUDA=1;CMAKE_INTDIR="RelWithDebInfo";mxnet_EXPORTS;%(Defines)</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -Xcompiler="/MP /bigobj -Zi -Ob1"</AdditionalOptions>
+      <CodeGeneration>compute_52,sm_52</CodeGeneration>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>O2</Optimization>
+      <Runtime>MD</Runtime>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <UseHostInclude>false</UseHostInclude>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\lib\intel64\mkl_rt.lib;iomp5.lib;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\lib\intel64\mkl_rt.lib;C:\opencv-3.4.4\build\x64\vc14\lib\opencv_world344.lib;C:\opencv-3.4.4\build\x64\vc14\lib\opencv_world344.lib;C:\opencv-3.4.4\build\x64\vc14\lib\opencv_world344.lib;C:\opencv-3.4.4\build\x64\vc14\lib\opencv_world344.lib;cublas.lib;cufft.lib;cusolver.lib;curand.lib;nvrtc.lib;cuda.lib;3rdparty\dmlc-core\RelWithDebInfo\dmlc.lib;iomp5.lib;cublas.lib;cufft.lib;cusolver.lib;curand.lib;nvrtc.lib;cuda.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v9.0/lib64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v9.0/lib64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/work/sun-mxnet/SNIPER-mxnet/build/RelWithDebInfo/libmxnet.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/work/sun-mxnet/SNIPER-mxnet/build/RelWithDebInfo/libmxnet.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-Wno-deprecated-gpu-targets</AdditionalOptions>
+      <PerformDeviceLink>true</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\sun-mxnet\SNIPER-mxnet\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/work/sun-mxnet/SNIPER-mxnet/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/sun-mxnet/SNIPER-mxnet -BD:/work/sun-mxnet/SNIPER-mxnet/build --check-stamp-file D:/work/sun-mxnet/SNIPER-mxnet/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/work/sun-mxnet/SNIPER-mxnet/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCUDACompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCUDACompilerABI.cu;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCUDACompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCUDACompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.14\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.14\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindGTest.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\GoogleTest.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\opencv-3.4.4\build\x64\vc14\lib\OpenCVConfig-version.cmake;C:\opencv-3.4.4\build\x64\vc14\lib\OpenCVConfig.cmake;C:\opencv-3.4.4\build\x64\vc14\lib\OpenCVModules-debug.cmake;C:\opencv-3.4.4\build\x64\vc14\lib\OpenCVModules-release.cmake;C:\opencv-3.4.4\build\x64\vc14\lib\OpenCVModules.cmake;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\cmake\Utils.cmake;D:\work\sun-mxnet\SNIPER-mxnet\CMakeLists.txt;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\3.14.0-rc4\CMakeCCompiler.cmake;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\3.14.0-rc4\CMakeCUDACompiler.cmake;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\3.14.0-rc4\CMakeCXXCompiler.cmake;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\3.14.0-rc4\CMakeRCCompiler.cmake;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\3.14.0-rc4\CMakeSystem.cmake;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\feature_tests.c;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\feature_tests.cxx;D:\work\sun-mxnet\SNIPER-mxnet\build\detect_cuda_archs.cu;D:\work\sun-mxnet\SNIPER-mxnet\cmake\ChooseBlas.cmake;D:\work\sun-mxnet\SNIPER-mxnet\cmake\FirstClassLangCuda.cmake;D:\work\sun-mxnet\SNIPER-mxnet\cmake\Modules\FindGperftools.cmake;D:\work\sun-mxnet\SNIPER-mxnet\cmake\Modules\FindJeMalloc.cmake;D:\work\sun-mxnet\SNIPER-mxnet\cmake\Modules\FindMKL.cmake;D:\work\sun-mxnet\SNIPER-mxnet\cmake\Utils.cmake;D:\work\sun-mxnet\SNIPER-mxnet\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/work/sun-mxnet/SNIPER-mxnet/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/sun-mxnet/SNIPER-mxnet -BD:/work/sun-mxnet/SNIPER-mxnet/build --check-stamp-file D:/work/sun-mxnet/SNIPER-mxnet/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/work/sun-mxnet/SNIPER-mxnet/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCUDACompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCUDACompilerABI.cu;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCUDACompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCUDACompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.14\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.14\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindGTest.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\GoogleTest.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\opencv-3.4.4\build\x64\vc14\lib\OpenCVConfig-version.cmake;C:\opencv-3.4.4\build\x64\vc14\lib\OpenCVConfig.cmake;C:\opencv-3.4.4\build\x64\vc14\lib\OpenCVModules-debug.cmake;C:\opencv-3.4.4\build\x64\vc14\lib\OpenCVModules-release.cmake;C:\opencv-3.4.4\build\x64\vc14\lib\OpenCVModules.cmake;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\cmake\Utils.cmake;D:\work\sun-mxnet\SNIPER-mxnet\CMakeLists.txt;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\3.14.0-rc4\CMakeCCompiler.cmake;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\3.14.0-rc4\CMakeCUDACompiler.cmake;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\3.14.0-rc4\CMakeCXXCompiler.cmake;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\3.14.0-rc4\CMakeRCCompiler.cmake;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\3.14.0-rc4\CMakeSystem.cmake;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\feature_tests.c;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\feature_tests.cxx;D:\work\sun-mxnet\SNIPER-mxnet\build\detect_cuda_archs.cu;D:\work\sun-mxnet\SNIPER-mxnet\cmake\ChooseBlas.cmake;D:\work\sun-mxnet\SNIPER-mxnet\cmake\FirstClassLangCuda.cmake;D:\work\sun-mxnet\SNIPER-mxnet\cmake\Modules\FindGperftools.cmake;D:\work\sun-mxnet\SNIPER-mxnet\cmake\Modules\FindJeMalloc.cmake;D:\work\sun-mxnet\SNIPER-mxnet\cmake\Modules\FindMKL.cmake;D:\work\sun-mxnet\SNIPER-mxnet\cmake\Utils.cmake;D:\work\sun-mxnet\SNIPER-mxnet\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/work/sun-mxnet/SNIPER-mxnet/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/sun-mxnet/SNIPER-mxnet -BD:/work/sun-mxnet/SNIPER-mxnet/build --check-stamp-file D:/work/sun-mxnet/SNIPER-mxnet/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/work/sun-mxnet/SNIPER-mxnet/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCUDACompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCUDACompilerABI.cu;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCUDACompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCUDACompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.14\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.14\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindGTest.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\GoogleTest.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\opencv-3.4.4\build\x64\vc14\lib\OpenCVConfig-version.cmake;C:\opencv-3.4.4\build\x64\vc14\lib\OpenCVConfig.cmake;C:\opencv-3.4.4\build\x64\vc14\lib\OpenCVModules-debug.cmake;C:\opencv-3.4.4\build\x64\vc14\lib\OpenCVModules-release.cmake;C:\opencv-3.4.4\build\x64\vc14\lib\OpenCVModules.cmake;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\cmake\Utils.cmake;D:\work\sun-mxnet\SNIPER-mxnet\CMakeLists.txt;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\3.14.0-rc4\CMakeCCompiler.cmake;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\3.14.0-rc4\CMakeCUDACompiler.cmake;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\3.14.0-rc4\CMakeCXXCompiler.cmake;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\3.14.0-rc4\CMakeRCCompiler.cmake;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\3.14.0-rc4\CMakeSystem.cmake;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\feature_tests.c;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\feature_tests.cxx;D:\work\sun-mxnet\SNIPER-mxnet\build\detect_cuda_archs.cu;D:\work\sun-mxnet\SNIPER-mxnet\cmake\ChooseBlas.cmake;D:\work\sun-mxnet\SNIPER-mxnet\cmake\FirstClassLangCuda.cmake;D:\work\sun-mxnet\SNIPER-mxnet\cmake\Modules\FindGperftools.cmake;D:\work\sun-mxnet\SNIPER-mxnet\cmake\Modules\FindJeMalloc.cmake;D:\work\sun-mxnet\SNIPER-mxnet\cmake\Modules\FindMKL.cmake;D:\work\sun-mxnet\SNIPER-mxnet\cmake\Utils.cmake;D:\work\sun-mxnet\SNIPER-mxnet\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/work/sun-mxnet/SNIPER-mxnet/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/sun-mxnet/SNIPER-mxnet -BD:/work/sun-mxnet/SNIPER-mxnet/build --check-stamp-file D:/work/sun-mxnet/SNIPER-mxnet/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/work/sun-mxnet/SNIPER-mxnet/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCUDACompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCUDACompilerABI.cu;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCUDACompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCUDACompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.14\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.14\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindGTest.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\GoogleTest.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\opencv-3.4.4\build\x64\vc14\lib\OpenCVConfig-version.cmake;C:\opencv-3.4.4\build\x64\vc14\lib\OpenCVConfig.cmake;C:\opencv-3.4.4\build\x64\vc14\lib\OpenCVModules-debug.cmake;C:\opencv-3.4.4\build\x64\vc14\lib\OpenCVModules-release.cmake;C:\opencv-3.4.4\build\x64\vc14\lib\OpenCVModules.cmake;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\cmake\Utils.cmake;D:\work\sun-mxnet\SNIPER-mxnet\CMakeLists.txt;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\3.14.0-rc4\CMakeCCompiler.cmake;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\3.14.0-rc4\CMakeCUDACompiler.cmake;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\3.14.0-rc4\CMakeCXXCompiler.cmake;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\3.14.0-rc4\CMakeRCCompiler.cmake;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\3.14.0-rc4\CMakeSystem.cmake;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\feature_tests.c;D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\feature_tests.cxx;D:\work\sun-mxnet\SNIPER-mxnet\build\detect_cuda_archs.cu;D:\work\sun-mxnet\SNIPER-mxnet\cmake\ChooseBlas.cmake;D:\work\sun-mxnet\SNIPER-mxnet\cmake\FirstClassLangCuda.cmake;D:\work\sun-mxnet\SNIPER-mxnet\cmake\Modules\FindGperftools.cmake;D:\work\sun-mxnet\SNIPER-mxnet\cmake\Modules\FindJeMalloc.cmake;D:\work\sun-mxnet\SNIPER-mxnet\cmake\Modules\FindMKL.cmake;D:\work\sun-mxnet\SNIPER-mxnet\cmake\Utils.cmake;D:\work\sun-mxnet\SNIPER-mxnet\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\base.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\c_api.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\c_predict_api.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\engine.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\executor.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\graph_attr_types.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\imperative.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\io.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\kvstore.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\ndarray.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\op_attr_types.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\operator.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\operator_util.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\resource.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\rtc.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\storage.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\include\mxnet\tensor_blob.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\c_api\c_api.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\c_api\c_api_common.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\c_api\c_api_error.cc">
+      <ObjectFileName>$(IntDir)/src/c_api/c_api_error.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\c_api\c_api_executor.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\c_api\c_api_function.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\c_api\c_api_ndarray.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\c_api\c_api_profile.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\c_api\c_api_symbolic.cc">
+      <ObjectFileName>$(IntDir)/src/c_api/c_api_symbolic.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\c_api\c_predict_api.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\coco_api\common\gason.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\coco_api\common\maskApi.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\coco_api\common\maskApi.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\common\cuda_utils.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\common\exec_utils.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\common\lazy_alloc_array.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\common\object_pool.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\common\random_generator.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\common\rtc.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\common\static_array.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\common\utils.cc">
+      <ObjectFileName>$(IntDir)/src/common/utils.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\common\utils.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\engine\engine.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\engine\engine_impl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\engine\naive_engine.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\engine\openmp.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\engine\openmp.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\engine\stream_manager.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\engine\thread_pool.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\engine\threaded_engine.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\engine\threaded_engine.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\engine\threaded_engine_perdevice.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\engine\threaded_engine_pooled.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\executor\attach_op_execs_pass.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\executor\attach_op_resource_pass.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\executor\exec_pass.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\executor\graph_executor.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\executor\graph_executor.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\executor\infer_graph_attr_pass.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\executor\inplace_addto_detect_pass.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\imperative\cached_op.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\imperative\imperative.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\imperative\imperative_utils.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\initialize.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\image_aug_default.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\image_augmenter.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\image_det_aug_default.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\image_io.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\image_iter_common.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\image_recordio.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\inst_vector.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\io.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\iter_batchloader.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\iter_csv.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\iter_image_det_recordio.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\iter_image_recordio.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\iter_image_recordio_2.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\iter_libsvm.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\iter_mnist.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\iter_normalize.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\iter_prefetcher.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\iter_sparse.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\iter_sparse_batchloader.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\io\iter_sparse_prefetcher.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\kvstore\comm.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\kvstore\gradient_compression-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\kvstore\gradient_compression.cc">
+      <ObjectFileName>$(IntDir)/src/kvstore/gradient_compression.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\kvstore\gradient_compression.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\kvstore\kvstore.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\kvstore\kvstore_dist.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\kvstore\kvstore_dist_server.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\kvstore\kvstore_local.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\kvstore\kvstore_nccl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\kvstore\kvstore_utils.cc">
+      <ObjectFileName>$(IntDir)/src/kvstore/kvstore_utils.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\kvstore\kvstore_utils.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\ndarray\ndarray.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\ndarray\ndarray_function-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\ndarray\ndarray_function.cc">
+      <ObjectFileName>$(IntDir)/src/ndarray/ndarray_function.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\ndarray\ndarray_function.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\nnvm\legacy_json_util.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\nnvm\legacy_op_util.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\nnvm\tvm_bridge.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\batch_norm_v1-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\batch_norm_v1.cc">
+      <ObjectFileName>$(IntDir)/src/operator/batch_norm_v1.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\bilinear_sampler-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\bilinear_sampler.cc">
+      <ObjectFileName>$(IntDir)/src/operator/bilinear_sampler.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\c_lapack_api.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\channel_op_common.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\adaptive_avg_pooling-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\adaptive_avg_pooling.cc">
+      <ObjectFileName>$(IntDir)/src/operator/contrib/adaptive_avg_pooling.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\bilinear_resize-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\bilinear_resize.cc">
+      <ObjectFileName>$(IntDir)/src/operator/contrib/bilinear_resize.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\bounding_box-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\bounding_box.cc">
+      <ObjectFileName>$(IntDir)/src/operator/contrib/bounding_box.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\count_sketch-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\count_sketch.cc">
+      <ObjectFileName>$(IntDir)/src/operator/contrib/count_sketch.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\mgpuenums.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\util\static.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\detail\cpu_ctc.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\detail\ctc_helper.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\detail\gpu_ctc.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\detail\gpu_ctc_kernels.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\detail\hostdevice.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_loss-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_loss.cc">
+      <ObjectFileName>$(IntDir)/src/operator/contrib/ctc_loss.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\deformable_convolution-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\deformable_convolution.cc">
+      <ObjectFileName>$(IntDir)/src/operator/contrib/deformable_convolution.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\deformable_psroi_pooling-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\deformable_psroi_pooling.cc">
+      <ObjectFileName>$(IntDir)/src/operator/contrib/deformable_psroi_pooling.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\fft-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\fft.cc">
+      <ObjectFileName>$(IntDir)/src/operator/contrib/fft.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ifft-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ifft.cc">
+      <ObjectFileName>$(IntDir)/src/operator/contrib/ifft.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\krprod.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\krprod.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\multibox_detection-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\multibox_detection.cc">
+      <ObjectFileName>$(IntDir)/src/operator/contrib/multibox_detection.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\multibox_prior-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\multibox_prior.cc">
+      <ObjectFileName>$(IntDir)/src/operator/contrib/multibox_prior.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\multibox_target-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\multibox_target.cc">
+      <ObjectFileName>$(IntDir)/src/operator/contrib/multibox_target.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\nn\deformable_im2col.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\psroi_pooling-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\psroi_pooling.cc">
+      <ObjectFileName>$(IntDir)/src/operator/contrib/psroi_pooling.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\quadratic_op-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\quadratic_op.cc">
+      <ObjectFileName>$(IntDir)/src/operator/contrib/quadratic_op.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\convolution_v1-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\convolution_v1.cc">
+      <ObjectFileName>$(IntDir)/src/operator/convolution_v1.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\correlation-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\correlation.cc">
+      <ObjectFileName>$(IntDir)/src/operator/correlation.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\crop-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\crop.cc">
+      <ObjectFileName>$(IntDir)/src/operator/crop.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\cross_device_copy.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\cudnn_bilinear_sampler-inl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\cudnn_lrn-inl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\cudnn_rnn-inl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\cudnn_spatial_transformer-inl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\custom\custom-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\custom\custom.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\custom\native_op-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\custom\native_op.cc">
+      <ObjectFileName>$(IntDir)/src/operator/custom/native_op.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\custom\ndarray_op-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\custom\ndarray_op.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\elemwise_op_common.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\grid_generator-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\grid_generator.cc">
+      <ObjectFileName>$(IntDir)/src/operator/grid_generator.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\identity_attach_KL_sparse_reg-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\identity_attach_KL_sparse_reg.cc">
+      <ObjectFileName>$(IntDir)/src/operator/identity_attach_KL_sparse_reg.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\image\image_random-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\image\image_random.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\instance_norm-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\instance_norm.cc">
+      <ObjectFileName>$(IntDir)/src/operator/instance_norm.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\l2_normalization-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\l2_normalization.cc">
+      <ObjectFileName>$(IntDir)/src/operator/l2_normalization.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\leaky_relu-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\leaky_relu.cc">
+      <ObjectFileName>$(IntDir)/src/operator/leaky_relu.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\linalg.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\linalg_impl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\loss_binary_op-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\loss_binary_op.cc">
+      <ObjectFileName>$(IntDir)/src/operator/loss_binary_op.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\make_loss-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\make_loss.cc">
+      <ObjectFileName>$(IntDir)/src/operator/make_loss.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mask_rcnn_target-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mask_rcnn_target.cc">
+      <ObjectFileName>$(IntDir)/src/operator/mask_rcnn_target.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\math_functions-inl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mshadow_op.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\multi_proposal-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\multi_proposal.cc">
+      <ObjectFileName>$(IntDir)/src/operator/multi_proposal.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\multi_proposal_target-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\multi_proposal_target.cc">
+      <ObjectFileName>$(IntDir)/src/operator/multi_proposal_target.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\multi_proposal_target_mask-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\multi_proposal_target_mask.cc">
+      <ObjectFileName>$(IntDir)/src/operator/multi_proposal_target_mask.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mxnet_op.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\activation-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\activation.cc">
+      <ObjectFileName>$(IntDir)/src/operator/nn/activation.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\batch_norm-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\batch_norm.cc">
+      <ObjectFileName>$(IntDir)/src/operator/nn/batch_norm.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\concat-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\concat.cc">
+      <ObjectFileName>$(IntDir)/src/operator/nn/concat.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\convolution-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\convolution.cc">
+      <ObjectFileName>$(IntDir)/src/operator/nn/convolution.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\cudnn\cudnn_activation-inl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\cudnn\cudnn_algoreg-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\cudnn\cudnn_algoreg.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\cudnn\cudnn_batch_norm-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\cudnn\cudnn_batch_norm.cc">
+      <ObjectFileName>$(IntDir)/src/operator/nn/cudnn/cudnn_batch_norm.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\cudnn\cudnn_convolution-inl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\cudnn\cudnn_deconvolution-inl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\cudnn\cudnn_pooling-inl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\cudnn\cudnn_softmax_activation-inl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\deconvolution-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\deconvolution.cc">
+      <ObjectFileName>$(IntDir)/src/operator/nn/deconvolution.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\depthwise_convolution-inl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\dropout-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\dropout.cc">
+      <ObjectFileName>$(IntDir)/src/operator/nn/dropout.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\fully_connected-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\fully_connected.cc">
+      <ObjectFileName>$(IntDir)/src/operator/nn/fully_connected.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\im2col.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\layer_norm-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\layer_norm.cc">
+      <ObjectFileName>$(IntDir)/src/operator/nn/layer_norm.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\lrn-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\lrn.cc">
+      <ObjectFileName>$(IntDir)/src/operator/nn/lrn.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_act.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_base-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_base.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_batch_norm-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_concat.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_convolution.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_copy.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_deconvolution.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_fully_connected.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_lrn-inl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_ops-inl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_pooling-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_pooling.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_softmax.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\mkldnn\mkldnn_sum.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\pool.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\pooling-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\pooling.cc">
+      <ObjectFileName>$(IntDir)/src/operator/nn/pooling.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\sequence_mask-inl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\softmax-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\softmax.cc">
+      <ObjectFileName>$(IntDir)/src/operator/nn/softmax.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\softmax_activation-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\softmax_activation.cc">
+      <ObjectFileName>$(IntDir)/src/operator/nn/softmax_activation.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\upsampling-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\upsampling.cc">
+      <ObjectFileName>$(IntDir)/src/operator/nn/upsampling.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nnpack\nnpack_convolution-inl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nnpack\nnpack_fully_connected-inl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nnpack\nnpack_pooling-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nnpack\nnpack_util.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nnpack\nnpack_util.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\operator.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\operator_common.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\operator_tune-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\operator_tune.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\operator_tune.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\operator_util.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\optimizer_op-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\optimizer_op.cc">
+      <ObjectFileName>$(IntDir)/src/operator/optimizer_op.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\pad-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\pad.cc">
+      <ObjectFileName>$(IntDir)/src/operator/pad.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\pooling_v1-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\pooling_v1.cc">
+      <ObjectFileName>$(IntDir)/src/operator/pooling_v1.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\quantization\dequantize-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\quantization\dequantize.cc">
+      <ObjectFileName>$(IntDir)/src/operator/quantization/dequantize.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\quantization\quantization_utils.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\quantization\quantize-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\quantization\quantize.cc">
+      <ObjectFileName>$(IntDir)/src/operator/quantization/quantize.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\quantization\quantize_graph_pass.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\quantization\quantized_conv.cc">
+      <ObjectFileName>$(IntDir)/src/operator/quantization/quantized_conv.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\quantization\quantized_flatten-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\quantization\quantized_flatten.cc">
+      <ObjectFileName>$(IntDir)/src/operator/quantization/quantized_flatten.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\quantization\quantized_fully_connected.cc">
+      <ObjectFileName>$(IntDir)/src/operator/quantization/quantized_fully_connected.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\quantization\quantized_pooling.cc">
+      <ObjectFileName>$(IntDir)/src/operator/quantization/quantized_pooling.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\quantization\requantize-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\quantization\requantize.cc">
+      <ObjectFileName>$(IntDir)/src/operator/quantization/requantize.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\random\multisample_op.cc">
+      <ObjectFileName>$(IntDir)/src/operator/random/multisample_op.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\random\multisample_op.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\random\sample_multinomial_op.cc">
+      <ObjectFileName>$(IntDir)/src/operator/random/sample_multinomial_op.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\random\sample_multinomial_op.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\random\sample_op.cc">
+      <ObjectFileName>$(IntDir)/src/operator/random/sample_op.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\random\sample_op.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\random\sampler.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\random\shuffle_op.cc">
+      <ObjectFileName>$(IntDir)/src/operator/random/shuffle_op.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\regression_output-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\regression_output.cc">
+      <ObjectFileName>$(IntDir)/src/operator/regression_output.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\rnn-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\rnn.cc">
+      <ObjectFileName>$(IntDir)/src/operator/rnn.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\roi_pooling-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\roi_pooling.cc">
+      <ObjectFileName>$(IntDir)/src/operator/roi_pooling.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\sequence_last-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\sequence_last.cc">
+      <ObjectFileName>$(IntDir)/src/operator/sequence_last.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\sequence_mask-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\sequence_mask.cc">
+      <ObjectFileName>$(IntDir)/src/operator/sequence_mask.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\sequence_op_common.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\sequence_reverse-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\sequence_reverse.cc">
+      <ObjectFileName>$(IntDir)/src/operator/sequence_reverse.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\slice_channel-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\slice_channel.cc">
+      <ObjectFileName>$(IntDir)/src/operator/slice_channel.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\softmax_output-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\softmax_output.cc">
+      <ObjectFileName>$(IntDir)/src/operator/softmax_output.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\spatial_transformer-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\spatial_transformer.cc">
+      <ObjectFileName>$(IntDir)/src/operator/spatial_transformer.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\special_functions-inl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\svm_output-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\svm_output.cc">
+      <ObjectFileName>$(IntDir)/src/operator/svm_output.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\swapaxis-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\swapaxis.cc">
+      <ObjectFileName>$(IntDir)/src/operator/swapaxis.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\broadcast_reduce-inl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\broadcast_reduce_op.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\broadcast_reduce_op_index.cc">
+      <ObjectFileName>$(IntDir)/src/operator/tensor/broadcast_reduce_op_index.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\broadcast_reduce_op_value.cc">
+      <ObjectFileName>$(IntDir)/src/operator/tensor/broadcast_reduce_op_value.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\cast_storage-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\cast_storage.cc">
+      <ObjectFileName>$(IntDir)/src/operator/tensor/cast_storage.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\control_flow_op.cc">
+      <ObjectFileName>$(IntDir)/src/operator/tensor/control_flow_op.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\control_flow_op.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\dot-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\dot.cc">
+      <ObjectFileName>$(IntDir)/src/operator/tensor/dot.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_broadcast_op.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_broadcast_op_basic.cc">
+      <ObjectFileName>$(IntDir)/src/operator/tensor/elemwise_binary_broadcast_op_basic.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_broadcast_op_extended.cc">
+      <ObjectFileName>$(IntDir)/src/operator/tensor/elemwise_binary_broadcast_op_extended.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_broadcast_op_logic.cc">
+      <ObjectFileName>$(IntDir)/src/operator/tensor/elemwise_binary_broadcast_op_logic.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_op-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_op.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_op.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_op_basic.cc">
+      <ObjectFileName>$(IntDir)/src/operator/tensor/elemwise_binary_op_basic.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_op_extended.cc">
+      <ObjectFileName>$(IntDir)/src/operator/tensor/elemwise_binary_op_extended.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_op_logic.cc">
+      <ObjectFileName>$(IntDir)/src/operator/tensor/elemwise_binary_op_logic.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_scalar_op.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_scalar_op_basic.cc">
+      <ObjectFileName>$(IntDir)/src/operator/tensor/elemwise_binary_scalar_op_basic.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_scalar_op_extended.cc">
+      <ObjectFileName>$(IntDir)/src/operator/tensor/elemwise_binary_scalar_op_extended.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_binary_scalar_op_logic.cc">
+      <ObjectFileName>$(IntDir)/src/operator/tensor/elemwise_binary_scalar_op_logic.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_scatter_op.cc">
+      <ObjectFileName>$(IntDir)/src/operator/tensor/elemwise_scatter_op.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_scatter_op.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_sum.cc">
+      <ObjectFileName>$(IntDir)/src/operator/tensor/elemwise_sum.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_sum.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_unary_op.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_unary_op_basic.cc">
+      <ObjectFileName>$(IntDir)/src/operator/tensor/elemwise_unary_op_basic.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\elemwise_unary_op_trig.cc">
+      <ObjectFileName>$(IntDir)/src/operator/tensor/elemwise_unary_op_trig.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\indexing_op.cc">
+      <ObjectFileName>$(IntDir)/src/operator/tensor/indexing_op.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\indexing_op.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\init_op.cc">
+      <ObjectFileName>$(IntDir)/src/operator/tensor/init_op.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\init_op.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\la_op.cc">
+      <ObjectFileName>$(IntDir)/src/operator/tensor/la_op.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\la_op.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\la_op_inline.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\matrix_op-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\matrix_op.cc">
+      <ObjectFileName>$(IntDir)/src/operator/tensor/matrix_op.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\ordering_op-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\ordering_op.cc">
+      <ObjectFileName>$(IntDir)/src/operator/tensor/ordering_op.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\sort_op.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\sparse_retain-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\sparse_retain.cc">
+      <ObjectFileName>$(IntDir)/src/operator/tensor/sparse_retain.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\square_sum-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\square_sum.cc">
+      <ObjectFileName>$(IntDir)/src/operator/tensor/square_sum.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\util\tensor_util-inl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\unistd.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\optimizer\sgd-inl.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\profiler\aggregate_stats.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\profiler\aggregate_stats.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\profiler\profiler.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\profiler\profiler.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\profiler\storage_profiler.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\profiler\vtune.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\profiler\vtune.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\resource.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\storage\cpu_device_storage.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\storage\cpu_shared_storage_manager.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\storage\gpu_device_storage.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\storage\naive_storage_manager.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\storage\pinned_memory_storage.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\storage\pooled_storage_manager.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\src\storage\storage.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\src\storage\storage_manager.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\base.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\c_api.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\compiler\contrib_op_param.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\compiler\op_attr_types.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\compiler\packed_func_ext.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\compiler\util.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\graph.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\graph_attr_types.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\node.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\op.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\op_attr_types.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\pass.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\pass_functions.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\symbolic.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\top\nn.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\top\tensor.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include\nnvm\tuple.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\c_api\c_api_common.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\c_api\c_api_error.cc">
+      <ObjectFileName>$(IntDir)/3rdparty/nnvm/src/c_api/c_api_error.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\c_api\c_api_graph.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\c_api\c_api_symbolic.cc">
+      <ObjectFileName>$(IntDir)/3rdparty/nnvm/src/c_api/c_api_symbolic.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\core\graph.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\core\node.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\core\op.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\core\pass.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\core\symbolic.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\pass\gradient.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\pass\graph_algorithm.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\pass\infer_shape_type.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\pass\order_mutation.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\pass\place_device.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\pass\plan_memory.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\pass\print_graph_ir.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\src\pass\saveload_json.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\base.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\dot_engine-inl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\expr_engine-inl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\expr_scalar-inl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\expression.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\broadcast.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\broadcast_with_axis.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\channel_pool.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\channel_unpool.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\choose.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\complex.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\concat.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\crop.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\fill.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\flip.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\implicit_gemm.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\mask.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\mirror.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\one_hot.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\pack_col2patch.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\pad.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\range.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\reduce_with_axis.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\reduceto1d.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\reshape.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\slice.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\slice_ex.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\spatial_pool.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\spatial_unpool.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\spatial_upsampling_nearest.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\swapaxis.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\take.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\take_grad.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\transpose.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\extension\unpack_patch2col.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\half.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\half2.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\io.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\logging.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\packet-inl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\packet\plain-inl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\packet\sse-inl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\random.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\stream_gpu-inl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\tensor.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\tensor_container.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\tensor_cpu-inl.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\tensor_gpu-inl.h" />
+    <CudaCompile Include="..\src\common\random_generator.cu" />
+    <CudaCompile Include="..\src\common\utils.cu">
+      <CompileOut>$(IntDir)/src/common/utils.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\kvstore\gradient_compression.cu">
+      <CompileOut>$(IntDir)/src/kvstore/gradient_compression.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\kvstore\kvstore_utils.cu">
+      <CompileOut>$(IntDir)/src/kvstore/kvstore_utils.cu.obj</CompileOut>
+    </CudaCompile>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\ndarray\ndarray_function-inl.cuh" />
+    <CudaCompile Include="..\src\ndarray\ndarray_function.cu">
+      <CompileOut>$(IntDir)/src/ndarray/ndarray_function.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\batch_norm_v1.cu">
+      <CompileOut>$(IntDir)/src/operator/batch_norm_v1.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\bilinear_sampler.cu">
+      <CompileOut>$(IntDir)/src/operator/bilinear_sampler.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\contrib\adaptive_avg_pooling.cu">
+      <CompileOut>$(IntDir)/src/operator/contrib/adaptive_avg_pooling.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\contrib\bilinear_resize.cu">
+      <CompileOut>$(IntDir)/src/operator/contrib/bilinear_resize.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\contrib\bounding_box.cu">
+      <CompileOut>$(IntDir)/src/operator/contrib/bounding_box.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\contrib\count_sketch.cu">
+      <CompileOut>$(IntDir)/src/operator/contrib/count_sketch.cu.obj</CompileOut>
+    </CudaCompile>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\ctaloadbalance.cuh" />
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\ctamerge.cuh" />
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\ctascan.cuh" />
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\ctasearch.cuh" />
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\ctasegreduce.cuh" />
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\ctasegscan.cuh" />
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\ctasegsort.cuh" />
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\ctasortedsearch.cuh" />
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\devicetypes.cuh" />
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\deviceutil.cuh" />
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\intrinsics.cuh" />
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\loadstore.cuh" />
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\serialsets.cuh" />
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\device\sortnetwork.cuh" />
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\ctc_include\contrib\moderngpu\include\mgpudevice.cuh" />
+    <CudaCompile Include="..\src\operator\contrib\ctc_loss.cu">
+      <CompileOut>$(IntDir)/src/operator/contrib/ctc_loss.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\contrib\deformable_convolution.cu">
+      <CompileOut>$(IntDir)/src/operator/contrib/deformable_convolution.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\contrib\deformable_psroi_pooling.cu">
+      <CompileOut>$(IntDir)/src/operator/contrib/deformable_psroi_pooling.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\contrib\fft.cu">
+      <CompileOut>$(IntDir)/src/operator/contrib/fft.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\contrib\ifft.cu">
+      <CompileOut>$(IntDir)/src/operator/contrib/ifft.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\contrib\multibox_detection.cu">
+      <CompileOut>$(IntDir)/src/operator/contrib/multibox_detection.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\contrib\multibox_prior.cu">
+      <CompileOut>$(IntDir)/src/operator/contrib/multibox_prior.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\contrib\multibox_target.cu">
+      <CompileOut>$(IntDir)/src/operator/contrib/multibox_target.cu.obj</CompileOut>
+    </CudaCompile>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\contrib\nn\deformable_im2col.cuh" />
+    <CudaCompile Include="..\src\operator\contrib\psroi_pooling.cu">
+      <CompileOut>$(IntDir)/src/operator/contrib/psroi_pooling.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\contrib\quadratic_op.cu">
+      <CompileOut>$(IntDir)/src/operator/contrib/quadratic_op.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\convolution_v1.cu">
+      <CompileOut>$(IntDir)/src/operator/convolution_v1.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\correlation.cu">
+      <CompileOut>$(IntDir)/src/operator/correlation.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\crop.cu">
+      <CompileOut>$(IntDir)/src/operator/crop.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\custom\native_op.cu">
+      <CompileOut>$(IntDir)/src/operator/custom/native_op.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\grid_generator.cu">
+      <CompileOut>$(IntDir)/src/operator/grid_generator.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\identity_attach_KL_sparse_reg.cu">
+      <CompileOut>$(IntDir)/src/operator/identity_attach_KL_sparse_reg.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\instance_norm.cu">
+      <CompileOut>$(IntDir)/src/operator/instance_norm.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\l2_normalization.cu">
+      <CompileOut>$(IntDir)/src/operator/l2_normalization.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\leaky_relu.cu">
+      <CompileOut>$(IntDir)/src/operator/leaky_relu.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\loss_binary_op.cu">
+      <CompileOut>$(IntDir)/src/operator/loss_binary_op.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\make_loss.cu">
+      <CompileOut>$(IntDir)/src/operator/make_loss.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\mask_rcnn_target.cu">
+      <CompileOut>$(IntDir)/src/operator/mask_rcnn_target.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\multi_proposal.cu">
+      <CompileOut>$(IntDir)/src/operator/multi_proposal.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\multi_proposal_target.cu">
+      <CompileOut>$(IntDir)/src/operator/multi_proposal_target.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\multi_proposal_target_mask.cu">
+      <CompileOut>$(IntDir)/src/operator/multi_proposal_target_mask.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\nn\activation.cu">
+      <CompileOut>$(IntDir)/src/operator/nn/activation.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\nn\batch_norm.cu">
+      <CompileOut>$(IntDir)/src/operator/nn/batch_norm.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\nn\concat.cu">
+      <CompileOut>$(IntDir)/src/operator/nn/concat.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\nn\convolution.cu">
+      <CompileOut>$(IntDir)/src/operator/nn/convolution.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\nn\cudnn\cudnn_batch_norm.cu">
+      <CompileOut>$(IntDir)/src/operator/nn/cudnn/cudnn_batch_norm.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\nn\deconvolution.cu">
+      <CompileOut>$(IntDir)/src/operator/nn/deconvolution.cu.obj</CompileOut>
+    </CudaCompile>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\depthwise_convolution_tf.cuh" />
+    <CudaCompile Include="..\src\operator\nn\dropout.cu">
+      <CompileOut>$(IntDir)/src/operator/nn/dropout.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\nn\fully_connected.cu">
+      <CompileOut>$(IntDir)/src/operator/nn/fully_connected.cu.obj</CompileOut>
+    </CudaCompile>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\im2col.cuh" />
+    <CudaCompile Include="..\src\operator\nn\layer_norm.cu">
+      <CompileOut>$(IntDir)/src/operator/nn/layer_norm.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\nn\lrn.cu">
+      <CompileOut>$(IntDir)/src/operator/nn/lrn.cu.obj</CompileOut>
+    </CudaCompile>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\nn\pool.cuh" />
+    <CudaCompile Include="..\src\operator\nn\pooling.cu">
+      <CompileOut>$(IntDir)/src/operator/nn/pooling.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\nn\softmax.cu">
+      <CompileOut>$(IntDir)/src/operator/nn/softmax.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\nn\softmax_activation.cu">
+      <CompileOut>$(IntDir)/src/operator/nn/softmax_activation.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\nn\upsampling.cu">
+      <CompileOut>$(IntDir)/src/operator/nn/upsampling.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\optimizer_op.cu">
+      <CompileOut>$(IntDir)/src/operator/optimizer_op.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\pad.cu">
+      <CompileOut>$(IntDir)/src/operator/pad.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\pooling_v1.cu">
+      <CompileOut>$(IntDir)/src/operator/pooling_v1.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\quantization\dequantize.cu">
+      <CompileOut>$(IntDir)/src/operator/quantization/dequantize.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\quantization\quantize.cu">
+      <CompileOut>$(IntDir)/src/operator/quantization/quantize.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\quantization\quantized_conv.cu">
+      <CompileOut>$(IntDir)/src/operator/quantization/quantized_conv.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\quantization\quantized_flatten.cu">
+      <CompileOut>$(IntDir)/src/operator/quantization/quantized_flatten.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\quantization\quantized_fully_connected.cu">
+      <CompileOut>$(IntDir)/src/operator/quantization/quantized_fully_connected.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\quantization\quantized_pooling.cu">
+      <CompileOut>$(IntDir)/src/operator/quantization/quantized_pooling.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\quantization\requantize.cu">
+      <CompileOut>$(IntDir)/src/operator/quantization/requantize.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\random\multisample_op.cu">
+      <CompileOut>$(IntDir)/src/operator/random/multisample_op.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\random\sample_multinomial_op.cu">
+      <CompileOut>$(IntDir)/src/operator/random/sample_multinomial_op.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\random\sample_op.cu">
+      <CompileOut>$(IntDir)/src/operator/random/sample_op.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\random\shuffle_op.cu">
+      <CompileOut>$(IntDir)/src/operator/random/shuffle_op.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\regression_output.cu">
+      <CompileOut>$(IntDir)/src/operator/regression_output.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\rnn.cu">
+      <CompileOut>$(IntDir)/src/operator/rnn.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\roi_pooling.cu">
+      <CompileOut>$(IntDir)/src/operator/roi_pooling.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\sequence_last.cu">
+      <CompileOut>$(IntDir)/src/operator/sequence_last.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\sequence_mask.cu">
+      <CompileOut>$(IntDir)/src/operator/sequence_mask.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\sequence_reverse.cu">
+      <CompileOut>$(IntDir)/src/operator/sequence_reverse.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\slice_channel.cu">
+      <CompileOut>$(IntDir)/src/operator/slice_channel.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\softmax_output.cu">
+      <CompileOut>$(IntDir)/src/operator/softmax_output.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\spatial_transformer.cu">
+      <CompileOut>$(IntDir)/src/operator/spatial_transformer.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\svm_output.cu">
+      <CompileOut>$(IntDir)/src/operator/svm_output.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\swapaxis.cu">
+      <CompileOut>$(IntDir)/src/operator/swapaxis.cu.obj</CompileOut>
+    </CudaCompile>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\broadcast_reduce-inl.cuh" />
+    <CudaCompile Include="..\src\operator\tensor\broadcast_reduce_op_index.cu">
+      <CompileOut>$(IntDir)/src/operator/tensor/broadcast_reduce_op_index.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\broadcast_reduce_op_value.cu">
+      <CompileOut>$(IntDir)/src/operator/tensor/broadcast_reduce_op_value.cu.obj</CompileOut>
+    </CudaCompile>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\cast_storage-inl.cuh" />
+    <CudaCompile Include="..\src\operator\tensor\cast_storage.cu">
+      <CompileOut>$(IntDir)/src/operator/tensor/cast_storage.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\control_flow_op.cu">
+      <CompileOut>$(IntDir)/src/operator/tensor/control_flow_op.cu.obj</CompileOut>
+    </CudaCompile>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\dot-inl.cuh" />
+    <CudaCompile Include="..\src\operator\tensor\dot.cu">
+      <CompileOut>$(IntDir)/src/operator/tensor/dot.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\elemwise_binary_broadcast_op_basic.cu">
+      <CompileOut>$(IntDir)/src/operator/tensor/elemwise_binary_broadcast_op_basic.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\elemwise_binary_broadcast_op_extended.cu">
+      <CompileOut>$(IntDir)/src/operator/tensor/elemwise_binary_broadcast_op_extended.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\elemwise_binary_broadcast_op_logic.cu">
+      <CompileOut>$(IntDir)/src/operator/tensor/elemwise_binary_broadcast_op_logic.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\elemwise_binary_op_basic.cu">
+      <CompileOut>$(IntDir)/src/operator/tensor/elemwise_binary_op_basic.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\elemwise_binary_op_extended.cu">
+      <CompileOut>$(IntDir)/src/operator/tensor/elemwise_binary_op_extended.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\elemwise_binary_op_logic.cu">
+      <CompileOut>$(IntDir)/src/operator/tensor/elemwise_binary_op_logic.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\elemwise_binary_scalar_op_basic.cu">
+      <CompileOut>$(IntDir)/src/operator/tensor/elemwise_binary_scalar_op_basic.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\elemwise_binary_scalar_op_extended.cu">
+      <CompileOut>$(IntDir)/src/operator/tensor/elemwise_binary_scalar_op_extended.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\elemwise_binary_scalar_op_logic.cu">
+      <CompileOut>$(IntDir)/src/operator/tensor/elemwise_binary_scalar_op_logic.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\elemwise_scatter_op.cu">
+      <CompileOut>$(IntDir)/src/operator/tensor/elemwise_scatter_op.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\elemwise_sum.cu">
+      <CompileOut>$(IntDir)/src/operator/tensor/elemwise_sum.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\elemwise_unary_op_basic.cu">
+      <CompileOut>$(IntDir)/src/operator/tensor/elemwise_unary_op_basic.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\elemwise_unary_op_trig.cu">
+      <CompileOut>$(IntDir)/src/operator/tensor/elemwise_unary_op_trig.cu.obj</CompileOut>
+    </CudaCompile>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\indexing_op-inl.cuh" />
+    <CudaCompile Include="..\src\operator\tensor\indexing_op.cu">
+      <CompileOut>$(IntDir)/src/operator/tensor/indexing_op.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\init_op.cu">
+      <CompileOut>$(IntDir)/src/operator/tensor/init_op.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\la_op.cu">
+      <CompileOut>$(IntDir)/src/operator/tensor/la_op.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\matrix_op.cu">
+      <CompileOut>$(IntDir)/src/operator/tensor/matrix_op.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\ordering_op.cu">
+      <CompileOut>$(IntDir)/src/operator/tensor/ordering_op.cu.obj</CompileOut>
+    </CudaCompile>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\sort_op-inl.cuh" />
+    <CudaCompile Include="..\src\operator\tensor\sparse_retain.cu">
+      <CompileOut>$(IntDir)/src/operator/tensor/sparse_retain.cu.obj</CompileOut>
+    </CudaCompile>
+    <CudaCompile Include="..\src\operator\tensor\square_sum.cu">
+      <CompileOut>$(IntDir)/src/operator/tensor/square_sum.cu.obj</CompileOut>
+    </CudaCompile>
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\src\operator\tensor\util\tensor_util-inl.cuh" />
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\cuda\reduce.cuh" />
+    <None Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow\mshadow\cuda\tensor_gpu-inl.cuh" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\work\sun-mxnet\SNIPER-mxnet\build\ZERO_CHECK.vcxproj">
+      <Project>{7F23BBB2-A707-3EAA-B6C3-26C5A9DA2ACF}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\work\sun-mxnet\SNIPER-mxnet\build\3rdparty\dmlc-core\dmlc.vcxproj">
+      <Project>{160EA283-512F-3607-8CD3-D1769862CDA6}</Project>
+      <Name>dmlc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 9.0.targets" />
+  </ImportGroup>
+</Project>

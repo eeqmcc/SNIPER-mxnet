@@ -63,7 +63,6 @@ __pycache__
 *.states
 *.json
 *.d
-build
 cmake-build*
 data
 recommonmark

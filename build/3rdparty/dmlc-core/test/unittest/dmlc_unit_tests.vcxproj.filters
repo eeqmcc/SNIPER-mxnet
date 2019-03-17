@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\test\unittest\unittest_any.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\test\unittest\unittest_array_view.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\test\unittest\unittest_config.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\test\unittest\unittest_env.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\test\unittest\unittest_json.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\test\unittest\unittest_lockfree.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\test\unittest\unittest_logging.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\test\unittest\unittest_main.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\test\unittest\unittest_optional.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\test\unittest\unittest_param.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\test\unittest\unittest_parser.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\test\unittest\unittest_serializer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\test\unittest\unittest_thread_group.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\test\unittest\unittest_threaditer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\test\unittest\unittest_threaditer_exc_handling.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\test\unittest\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B6D6E8B4-BE77-355A-AED4-AF527D102094}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

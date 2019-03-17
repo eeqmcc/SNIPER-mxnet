@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{160EA283-512F-3607-8CD3-D1769862CDA6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>dmlc</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 9.0.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\sun-mxnet\SNIPER-mxnet\build\3rdparty\dmlc-core\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">dmlc.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">dmlc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\sun-mxnet\SNIPER-mxnet\build\3rdparty\dmlc-core\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">dmlc.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">dmlc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\sun-mxnet\SNIPER-mxnet\build\3rdparty\dmlc-core\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">dmlc.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">dmlc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\sun-mxnet\SNIPER-mxnet\build\3rdparty\dmlc-core\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">dmlc.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">dmlc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PreprocessorDefinitions>WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;DMLC_USE_HDFS=0;DMLC_USE_S3=0;DMLC_USE_AZURE=0;__USE_XOPEN2K8;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;DMLC_USE_HDFS=0;DMLC_USE_S3=0;DMLC_USE_AZURE=0;__USE_XOPEN2K8;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(Include)</Include>
+      <Defines>_WINDOWS;WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;DMLC_USE_HDFS=0;DMLC_USE_S3=0;DMLC_USE_AZURE=0;__USE_XOPEN2K8;CMAKE_INTDIR="Debug";%(Defines)</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -Xcompiler="/EHsc -Zi -Ob0"</AdditionalOptions>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>Od</Optimization>
+      <Runtime>MDd</Runtime>
+      <RuntimeChecks>RTC1</RuntimeChecks>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <TypeInfo>true</TypeInfo>
+      <UseHostInclude>false</UseHostInclude>
+      <Warning>W3</Warning>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <CudaLink>
+      <AdditionalOptions>-Wno-deprecated-gpu-targets</AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;DMLC_USE_HDFS=0;DMLC_USE_S3=0;DMLC_USE_AZURE=0;__USE_XOPEN2K8;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;DMLC_USE_HDFS=0;DMLC_USE_S3=0;DMLC_USE_AZURE=0;__USE_XOPEN2K8;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(Include)</Include>
+      <Defines>_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;DMLC_USE_HDFS=0;DMLC_USE_S3=0;DMLC_USE_AZURE=0;__USE_XOPEN2K8;CMAKE_INTDIR="Release";%(Defines)</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -Xcompiler="/EHsc -Ob2"</AdditionalOptions>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>O2</Optimization>
+      <Runtime>MD</Runtime>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <TypeInfo>true</TypeInfo>
+      <UseHostInclude>false</UseHostInclude>
+      <Warning>W3</Warning>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <CudaLink>
+      <AdditionalOptions>-Wno-deprecated-gpu-targets</AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;DMLC_USE_HDFS=0;DMLC_USE_S3=0;DMLC_USE_AZURE=0;__USE_XOPEN2K8;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;DMLC_USE_HDFS=0;DMLC_USE_S3=0;DMLC_USE_AZURE=0;__USE_XOPEN2K8;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(Include)</Include>
+      <Defines>_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;DMLC_USE_HDFS=0;DMLC_USE_S3=0;DMLC_USE_AZURE=0;__USE_XOPEN2K8;CMAKE_INTDIR="MinSizeRel";%(Defines)</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -Xcompiler="/EHsc -Ob1"</AdditionalOptions>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>O1</Optimization>
+      <Runtime>MD</Runtime>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <TypeInfo>true</TypeInfo>
+      <UseHostInclude>false</UseHostInclude>
+      <Warning>W3</Warning>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <CudaLink>
+      <AdditionalOptions>-Wno-deprecated-gpu-targets</AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;DMLC_USE_HDFS=0;DMLC_USE_S3=0;DMLC_USE_AZURE=0;__USE_XOPEN2K8;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;DMLC_USE_HDFS=0;DMLC_USE_S3=0;DMLC_USE_AZURE=0;__USE_XOPEN2K8;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(Include)</Include>
+      <Defines>_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;DMLC_USE_HDFS=0;DMLC_USE_S3=0;DMLC_USE_AZURE=0;__USE_XOPEN2K8;CMAKE_INTDIR="RelWithDebInfo";%(Defines)</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -Xcompiler="/EHsc -Zi -Ob1"</AdditionalOptions>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>O2</Optimization>
+      <Runtime>MD</Runtime>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <TypeInfo>true</TypeInfo>
+      <UseHostInclude>false</UseHostInclude>
+      <Warning>W3</Warning>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <CudaLink>
+      <AdditionalOptions>-Wno-deprecated-gpu-targets</AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/work/sun-mxnet/SNIPER-mxnet/3rdparty/dmlc-core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/sun-mxnet/SNIPER-mxnet -BD:/work/sun-mxnet/SNIPER-mxnet/build --check-stamp-file D:/work/sun-mxnet/SNIPER-mxnet/build/3rdparty/dmlc-core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/work/sun-mxnet/SNIPER-mxnet/3rdparty/dmlc-core/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPythonInterp.cmake;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\CMakeLists.txt;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\cmake\Utils.cmake;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\sun-mxnet\SNIPER-mxnet\build\3rdparty\dmlc-core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/work/sun-mxnet/SNIPER-mxnet/3rdparty/dmlc-core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/sun-mxnet/SNIPER-mxnet -BD:/work/sun-mxnet/SNIPER-mxnet/build --check-stamp-file D:/work/sun-mxnet/SNIPER-mxnet/build/3rdparty/dmlc-core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/work/sun-mxnet/SNIPER-mxnet/3rdparty/dmlc-core/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPythonInterp.cmake;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\CMakeLists.txt;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\cmake\Utils.cmake;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\sun-mxnet\SNIPER-mxnet\build\3rdparty\dmlc-core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/work/sun-mxnet/SNIPER-mxnet/3rdparty/dmlc-core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/sun-mxnet/SNIPER-mxnet -BD:/work/sun-mxnet/SNIPER-mxnet/build --check-stamp-file D:/work/sun-mxnet/SNIPER-mxnet/build/3rdparty/dmlc-core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/work/sun-mxnet/SNIPER-mxnet/3rdparty/dmlc-core/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPythonInterp.cmake;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\CMakeLists.txt;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\cmake\Utils.cmake;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\sun-mxnet\SNIPER-mxnet\build\3rdparty\dmlc-core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/work/sun-mxnet/SNIPER-mxnet/3rdparty/dmlc-core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/sun-mxnet/SNIPER-mxnet -BD:/work/sun-mxnet/SNIPER-mxnet/build --check-stamp-file D:/work/sun-mxnet/SNIPER-mxnet/build/3rdparty/dmlc-core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/work/sun-mxnet/SNIPER-mxnet/3rdparty/dmlc-core/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPythonInterp.cmake;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\CMakeLists.txt;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\cmake\Utils.cmake;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\sun-mxnet\SNIPER-mxnet\build\3rdparty\dmlc-core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\src\config.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\src\data.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\src\io.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\src\recordio.cc" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\any.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\array_view.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\base.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\blockingconcurrentqueue.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\common.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\concurrency.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\concurrentqueue.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\config.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\data.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\endian.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\input_split_shuffle.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\io.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\json.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\logging.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\lua.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\memory.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\memory_io.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\omp.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\optional.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\parameter.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\recordio.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\registry.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\serializer.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\thread_group.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\thread_local.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\threadediter.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\timer.h" />
+    <ClInclude Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include\dmlc\type_traits.h" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\src\io\line_split.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\src\io\recordio_split.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\src\io\indexed_recordio_split.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\src\io\input_split_base.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\src\io\filesys.cc" />
+    <ClCompile Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\src\io\local_filesys.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\work\sun-mxnet\SNIPER-mxnet\build\ZERO_CHECK.vcxproj">
+      <Project>{7F23BBB2-A707-3EAA-B6C3-26C5A9DA2ACF}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 9.0.targets" />
+  </ImportGroup>
+</Project>
