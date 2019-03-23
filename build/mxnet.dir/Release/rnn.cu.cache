@@ -11,7 +11,7 @@ CodeGeneration=compute_52,sm_52
 CompileOut=mxnet.dir\Release\/src/operator/rnn.cu.obj
 CudaRuntime=Static
 CudaToolkitCustomDir=
-Defines=NDEBUG;WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;MXNET_ENABLE_CUDA_RTC=1;MXNET_USE_CUDA=1;CMAKE_INTDIR="Release";mxnet_EXPORTS;;NDEBUG;WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;MXNET_ENABLE_CUDA_RTC=1;MXNET_USE_CUDA=1;CMAKE_INTDIR="Release";mxnet_EXPORTS;MSHADOW_USE_F16C=0;USE_OPENMP=0;_WINDLL;_MBCS;
+Defines=NDEBUG;WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;MXNET_ENABLE_CUDA_RTC=1;MXNET_USE_CUDA=1;CMAKE_INTDIR="Release";mxnet_EXPORTS;;NDEBUG;WIN32_LEAN_AND_MEAN;DMLC_USE_CXX11;MSHADOW_IN_CXX11;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;MXNET_EXPORTS;NNVM_EXPORTS;DMLC_STRICT_CXX11;NOMINMAX;USE_MKL=1;CUB_MKL=1;MSHADOW_USE_CUDA=1;MXNET_USE_NCCL=0;MSHADOW_USE_CBLAS=0;MSHADOW_USE_MKL=1;MXNET_USE_OPENCV=1;MXNET_ENABLE_CUDA_RTC=1;MXNET_USE_CUDA=1;CMAKE_INTDIR="Release";mxnet_EXPORTS;USE_OPENMP=0;MSHADOW_USE_F16C=0;_WINDLL;_MBCS;
 Emulation=false
 FastMath=false
 GenerateLineInfo=false
@@ -19,7 +19,7 @@ GenerateRelocatableDeviceCode=false
 GPUDebugInfo=false
 GPUDebugInfo=false
 HostDebugInfo=false
-Include=D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv
+Include=D:\work\sun-sniper\SNIPER\SNIPER-mxnet\src\operator\mkl;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\src;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\cub;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\dlpack\include;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv
 Inputs=
 InterleaveSourceInPTX=false
 Keep=false

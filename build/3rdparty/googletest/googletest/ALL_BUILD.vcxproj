@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{4EA50544-6585-3941-A252-A0E7FE74B7AB}</ProjectGuid>
+    <ProjectGuid>{A08561B5-D289-3DAD-9E3C-1F240C465834}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>ALL_BUILD</ProjectName>
@@ -66,7 +66,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\googletest\googletest\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\googletest\googletest;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\work\sun-sniper\SNIPER\SNIPER-mxnet\src\operator\mkl;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\src;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\cub;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\dlpack\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\googletest\googletest\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\googletest\googletest;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -76,7 +76,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\googletest\googletest\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\googletest\googletest;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\work\sun-sniper\SNIPER\SNIPER-mxnet\src\operator\mkl;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\src;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\cub;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\dlpack\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\googletest\googletest\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\googletest\googletest;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -86,7 +86,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\googletest\googletest\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\googletest\googletest;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\work\sun-sniper\SNIPER\SNIPER-mxnet\src\operator\mkl;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\src;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\cub;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\dlpack\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\googletest\googletest\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\googletest\googletest;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -96,7 +96,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\work\sun-mxnet\SNIPER-mxnet\src\operator\mkl;D:\work\sun-mxnet\SNIPER-mxnet\include;D:\work\sun-mxnet\SNIPER-mxnet\src;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\cub;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\dlpack\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\googletest\googletest\include;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\googletest\googletest;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\work\sun-sniper\SNIPER\SNIPER-mxnet\src\operator\mkl;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\src;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\mshadow;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\cub;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\nnvm\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\nnvm\tvm\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\dmlc-core\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\dlpack\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\googletest\googletest\include;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\googletest\googletest;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019.3.203\windows\mkl\include;C:\opencv-3.4.4\build\include;C:\opencv-3.4.4\build\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -105,10 +105,10 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\googletest\googletest\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/work/sun-mxnet/SNIPER-mxnet/3rdparty/googletest/googletest/CMakeLists.txt</Message>
+    <CustomBuild Include="D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\googletest\googletest\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/work/sun-sniper/SNIPER/SNIPER-mxnet/3rdparty/googletest/googletest/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/sun-mxnet/SNIPER-mxnet -BD:/work/sun-mxnet/SNIPER-mxnet/build --check-stamp-file D:/work/sun-mxnet/SNIPER-mxnet/build/3rdparty/googletest/googletest/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/sun-sniper/SNIPER/SNIPER-mxnet -BD:/work/sun-sniper/SNIPER/SNIPER-mxnet/build --check-stamp-file D:/work/sun-sniper/SNIPER/SNIPER-mxnet/build/3rdparty/googletest/googletest/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -116,12 +116,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/work/sun-mxnet/SNIPER-mxnet/3rdparty/googletest/googletest/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\googletest\googletest\CMakeLists.txt;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\googletest\googletest\cmake\internal_utils.cmake;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\googletest\googletest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\sun-mxnet\SNIPER-mxnet\build\3rdparty\googletest\googletest\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/work/sun-sniper/SNIPER/SNIPER-mxnet/3rdparty/googletest/googletest/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\googletest\googletest\CMakeLists.txt;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\googletest\googletest\cmake\internal_utils.cmake;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\googletest\googletest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\work\sun-sniper\SNIPER\SNIPER-mxnet\build\3rdparty\googletest\googletest\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/work/sun-mxnet/SNIPER-mxnet/3rdparty/googletest/googletest/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/work/sun-sniper/SNIPER/SNIPER-mxnet/3rdparty/googletest/googletest/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/sun-mxnet/SNIPER-mxnet -BD:/work/sun-mxnet/SNIPER-mxnet/build --check-stamp-file D:/work/sun-mxnet/SNIPER-mxnet/build/3rdparty/googletest/googletest/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/sun-sniper/SNIPER/SNIPER-mxnet -BD:/work/sun-sniper/SNIPER/SNIPER-mxnet/build --check-stamp-file D:/work/sun-sniper/SNIPER/SNIPER-mxnet/build/3rdparty/googletest/googletest/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -129,12 +129,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/work/sun-mxnet/SNIPER-mxnet/3rdparty/googletest/googletest/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\googletest\googletest\CMakeLists.txt;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\googletest\googletest\cmake\internal_utils.cmake;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\googletest\googletest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\sun-mxnet\SNIPER-mxnet\build\3rdparty\googletest\googletest\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/work/sun-sniper/SNIPER/SNIPER-mxnet/3rdparty/googletest/googletest/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\googletest\googletest\CMakeLists.txt;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\googletest\googletest\cmake\internal_utils.cmake;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\googletest\googletest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\work\sun-sniper\SNIPER\SNIPER-mxnet\build\3rdparty\googletest\googletest\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/work/sun-mxnet/SNIPER-mxnet/3rdparty/googletest/googletest/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/work/sun-sniper/SNIPER/SNIPER-mxnet/3rdparty/googletest/googletest/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/sun-mxnet/SNIPER-mxnet -BD:/work/sun-mxnet/SNIPER-mxnet/build --check-stamp-file D:/work/sun-mxnet/SNIPER-mxnet/build/3rdparty/googletest/googletest/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/sun-sniper/SNIPER/SNIPER-mxnet -BD:/work/sun-sniper/SNIPER/SNIPER-mxnet/build --check-stamp-file D:/work/sun-sniper/SNIPER/SNIPER-mxnet/build/3rdparty/googletest/googletest/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -142,12 +142,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/work/sun-mxnet/SNIPER-mxnet/3rdparty/googletest/googletest/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\googletest\googletest\CMakeLists.txt;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\googletest\googletest\cmake\internal_utils.cmake;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\googletest\googletest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\sun-mxnet\SNIPER-mxnet\build\3rdparty\googletest\googletest\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/work/sun-sniper/SNIPER/SNIPER-mxnet/3rdparty/googletest/googletest/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\googletest\googletest\CMakeLists.txt;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\googletest\googletest\cmake\internal_utils.cmake;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\googletest\googletest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\work\sun-sniper\SNIPER\SNIPER-mxnet\build\3rdparty\googletest\googletest\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/work/sun-mxnet/SNIPER-mxnet/3rdparty/googletest/googletest/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/work/sun-sniper/SNIPER/SNIPER-mxnet/3rdparty/googletest/googletest/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/sun-mxnet/SNIPER-mxnet -BD:/work/sun-mxnet/SNIPER-mxnet/build --check-stamp-file D:/work/sun-mxnet/SNIPER-mxnet/build/3rdparty/googletest/googletest/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/work/sun-sniper/SNIPER/SNIPER-mxnet -BD:/work/sun-sniper/SNIPER/SNIPER-mxnet/build --check-stamp-file D:/work/sun-sniper/SNIPER/SNIPER-mxnet/build/3rdparty/googletest/googletest/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -155,28 +155,28 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/work/sun-mxnet/SNIPER-mxnet/3rdparty/googletest/googletest/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\googletest\googletest\CMakeLists.txt;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\googletest\googletest\cmake\internal_utils.cmake;D:\work\sun-mxnet\SNIPER-mxnet\3rdparty\googletest\googletest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\sun-mxnet\SNIPER-mxnet\build\3rdparty\googletest\googletest\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/work/sun-sniper/SNIPER/SNIPER-mxnet/3rdparty/googletest/googletest/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\googletest\googletest\CMakeLists.txt;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\googletest\googletest\cmake\internal_utils.cmake;D:\work\sun-sniper\SNIPER\SNIPER-mxnet\3rdparty\googletest\googletest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\work\sun-sniper\SNIPER\SNIPER-mxnet\build\3rdparty\googletest\googletest\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:\work\sun-mxnet\SNIPER-mxnet\build\ZERO_CHECK.vcxproj">
-      <Project>{7F23BBB2-A707-3EAA-B6C3-26C5A9DA2ACF}</Project>
+    <ProjectReference Include="D:\work\sun-sniper\SNIPER\SNIPER-mxnet\build\ZERO_CHECK.vcxproj">
+      <Project>{3CC5669E-72D0-3B90-AAB4-D94DD01EEC07}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="D:\work\sun-mxnet\SNIPER-mxnet\build\3rdparty\googletest\googletest\gtest.vcxproj">
-      <Project>{DB576E40-3C2B-3DDE-868A-B4B53029EC35}</Project>
+    <ProjectReference Include="D:\work\sun-sniper\SNIPER\SNIPER-mxnet\build\3rdparty\googletest\googletest\gtest.vcxproj">
+      <Project>{76709F12-4690-330D-B157-95CCF81EE81D}</Project>
       <Name>gtest</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="D:\work\sun-mxnet\SNIPER-mxnet\build\3rdparty\googletest\googletest\gtest_main.vcxproj">
-      <Project>{1295E82B-E1DA-3C16-9E75-5B26C14E6080}</Project>
+    <ProjectReference Include="D:\work\sun-sniper\SNIPER\SNIPER-mxnet\build\3rdparty\googletest\googletest\gtest_main.vcxproj">
+      <Project>{B7F4EBCF-75E3-3AFF-A7D2-00148E903E68}</Project>
       <Name>gtest_main</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

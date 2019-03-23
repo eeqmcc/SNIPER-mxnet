@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="D:\work\sun-mxnet\SNIPER-mxnet\build\CMakeFiles\f2bbb2375653daa84c13f3e76d037d01\RUN_TESTS_force.rule">
+    <CustomBuild Include="D:\work\sun-sniper\SNIPER\SNIPER-mxnet\build\CMakeFiles\d0fad1d8da0a8e283bc45f357134bb09\RUN_TESTS_force.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{277F5014-6A39-39DB-BED1-BEF3CAE83DA2}</UniqueIdentifier>
+      <UniqueIdentifier>{A8018F3B-1BB1-30D7-B349-418F278F6273}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
